@@ -1,0 +1,193 @@
+Script started on Fri Apr  3 09:31:46 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week04[0m[27m[24m[Jmac@macui-MacBookPro week04 % [K[?2004h[7mexport PATH="/Applications/Docker.app/Contents/Res[7mo[7murces/bin:$PATH"[27m[K[A[13C[27me[27mx[27mp[27mo[27mr[27mt[27m [27mP[27mA[27mT[27mH[27m=[27m"[27m/[27mA[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27ms[27m/[27mD[27mo[27mc[27mk[27me[27mr[27m.[27ma[27mp[27mp[27m/[27mC[27mo[27mn[27mt[27me[27mn[27mt[27ms[27m/[27mR[27me[27mso[27mu[27mr[27mc[27me[27ms[27m/[27mb[27mi[27mn[27m:[27m$[27mP[27mA[27mT[27mH[27m"[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week04[0m[27m[24m[Jmac@macui-MacBookPro week04 % [K[?2004h[7mcd ~/linux/week03/web_service[27m[29D[27mc[27md[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m0[27m3[27m/[27mw[27me[27mb[27m_[27ms[27me[27mr[27mv[27mi[27mc[27me[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mdocker compose up -d[27m[20D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[?2004l
+[33mWARN[0m[0000] /Users/mac/linux/week03/web_service/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+unable to get image 'nginx:1.25-alpine': failed to connect to the docker API at unix:///Users/mac/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/mac/.docker/run/docker.sock: connect: no such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mdocker exec -it my-web-proxy /bin/sh[27m[36D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27mt[27m [27mm[27my[27m-[27mw[27me[27mb[27m-[27mp[27mr[27mo[27mx[27my[27m [27m/[27mb[27mi[27mn[27m/[27ms[27mh[?2004l
+failed to connect to the docker API at unix:///Users/mac/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/mac/.docker/run/docker.sock: connect: no such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mdocker compose up -d[27m[20D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[?2004l
+[33mWARN[0m[0000] /Users/mac/linux/week03/web_service/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[?25l[0G[+] up 0/1
+ [33m⠋[0m Container my-web-proxy Starting                                          [34m0.0s[0m
+[?25h[?25l[2A[0G[+] up 1/1
+ [32m✔[0m Container my-web-proxy [32mStarted[0m                                           [34m0.1s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mdocker exec -it my-web-proxy /bin/sh[27m[36D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27mt[27m [27mm[27my[27m-[27mw[27me[27mb[27m-[27mp[27mr[27mo[27mx[27my[27m [27m/[27mb[27mi[27mn[27m/[27ms[27mh[?2004l
+/ # [6necho "============================" > /etc/motd
+/ # echo " 환영합니다!" >> /etc/motd
+/ # echo " 처음 로그인한 학생은 반드시 1회 패스워드 설정이 필요합니다." >> /etc/
+motd
+/ # echo "============================" >> /etc/motd
+/ # cat /etc/motd
+============================
+ 환영합니다!
+ 처음 로그인한 학생은 반드시 1회 패스워드 설정이 필요합니다.
+============================
+/ # [6nls -al /etc/skel
+total 24
+drwxr-xr-x    2 root     root          4096 Mar 20 01:11 [1;34m.[m
+drwxr-xr-x    1 root     root          4096 Mar 20 01:25 [1;34m..[m
+-rw-r--r--    1 root     root             0 Mar 20 01:09 [0;0m.bash_logout[m
+-rw-r--r--    1 root     root            45 Mar 20 01:10 [0;0m.bashrc[m
+-rw-r--r--    1 root     root            10 Mar 20 01:09 [0;0m.profile[m
+-rw-r--r--    1 root     root            26 Mar 20 01:11 [0;0mreadme.txt[m
+/ # cat /etc/skel/.profile
+umask 077
+/ # cat /etc/skel/.bashrc
+export HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S] "
+/ # [6nls /home
+[1;34mstudent1[m   [1;34mstudent2[m   [1;34mstudent3[m   [1;34mstudent4[m   [1;34mstudent5[m   [1;34mweb_admin[m
+/ # [6ncat /etc/sudoers | grep web_admin
+web_admin ALL=(ALL) NOPASSWD: /usr/bin/docker compose restart
+/ # [6ncd ~/linux/week03/web_service
+/bin/sh: cd: can't cd to /root/linux/week03/web_service: No such file or directory
+/ # [6nsu -s /bin/sh web_admin
+/ $ [6ncd /home/student1/dev_share
+sh: cd: can't cd to /home/student1/dev_share: Permission denied
+/ $ [6nsudo docker compose restart
+[sudo] password for web_admin: 
+Sorry, try again.
+[sudo] password for web_admin: 
+Sorry, try again.
+[sudo] password for web_admin: 
+sudo: docker: command not found
+/ $ [6nexit
+/ # [6ngetfacl /home/student1/dev_share
+getfacl: Removing leading '/' from absolute path names
+# file: home/student1/dev_share
+# owner: student1
+# group: dev_team1
+# flags: -s-
+user::rwx
+user:student2:--x
+group::r-x
+mask::r-x
+other::---
+
+/ # [6n
+/ # [6ngetfacl /home/student1/dev_share/test.sh
+getfacl: Removing leading '/' from absolute path names
+# file: home/student1/dev_share/test.sh
+# owner: root
+# group: dev_team1
+user::rwx
+user:student2:r-x
+group::---
+mask::r-x
+other::---
+
+/ # [6ngrep "dev_team1" /etc/group
+dev_team1:x:1021:student1,student2,student5
+/ # [6nls -al /usr/share/nginx/html/
+total 8
+drwxr-xr-x    5 root     root           160 Mar 20 01:24 [1;34m.[m
+drwxr-xr-x    3 root     root          4096 May  6  2024 [1;34m..[m
+-rw-r--r--    1 root     root           615 Mar 20 00:25 [0;0mindex.html[m
+drwxrwx---    2 root     root            64 Mar 20 00:31 [1;34mpds[m
+drwxr-s---    2 root     dev_team        64 Mar 20 01:24 [1;34mteam_share[m
+/ # [6ngetfacl /usr/share/nginx/html/team_share
+getfacl: Removing leading '/' from absolute path names
+# file: usr/share/nginx/html/team_share
+# owner: root
+# group: dev_team1
+# flags: -s-
+user::rwx
+group::r-x
+other::---
+
+/ # [6nsetfacl -m u:student2:r-x /home/student1/dev_share
+/ # [6ngetfacl /home/student1/dev_share
+getfacl: Removing leading '/' from absolute path names
+# file: home/student1/dev_share
+# owner: student1
+# group: dev_team1
+# flags: -s-
+user::rwx
+user:student2:r-x
+group::r-x
+mask::r-x
+other::---
+
+/ # [6nsetfacl -m u:student3:--- /usr/share/nginx/html/team_share
+setfacl: /usr/share/nginx/html/team_share: Not supported
+/ # [6nsetfacl -m u:student4:--- /usr/share/nginx/html/team_share
+setfacl: /usr/share/nginx/html/team_share: Not supported
+/ # [6ngetfacl /usr/share/nginx/html/team_share
+getfacl: Removing leading '/' from absolute path names
+# file: usr/share/nginx/html/team_share
+# owner: root
+# group: dev_team1
+# flags: -s-
+user::rwx
+group::r-x
+other::---
+
+/ # [6n
+/ # [6ngrep "dev_team1" /etc/group
+dev_team1:x:1021:student1,student2,student5
+/ # [6nsu -s /bin/sh student3
+/ $ [6nls /usr/share/nginx/html/team_share
+/ $ [6nexit
+/ # [6nsu -s /bin/sh student2
+/ $ [6nls /usr/share/nginx/html/team_share
+/ $ [6nexit
+/ # [6nls -al /usr/share/nginx/html/
+total 8
+drwxr-xr-x    5 root     root           160 Mar 20 01:24 [1;34m.[m
+drwxr-xr-x    3 root     root          4096 May  6  2024 [1;34m..[m
+-rw-r--r--    1 root     root           615 Mar 20 00:25 [0;0mindex.html[m
+drwxrwx---    2 root     root            64 Mar 20 00:31 [1;34mpds[m
+drwxr-s---    2 root     dev_team        64 Mar 20 01:24 [1;34mteam_share[m
+/ # [6nstat /usr/share/nginx/html/team_share
+  File: /usr/share/nginx/html/team_share
+  Size: 64        	Blocks: 0          IO Block: 4096   directory
+Device: 2bh/43d	Inode: 9           Links: 2
+Access: (2750/drwxr-s---)  Uid: (    0/    root)   Gid: ( 1021/dev_team1)
+Access: 2026-03-20 01:24:05.410147144 +0000
+Modify: 2026-03-20 01:24:05.410147144 +0000
+Change: 2026-03-20 01:24:14.959074510 +0000
+/ # [6nid student3
+uid=1003(student3) gid=1003(student3) groups=1003(student3)
+/ # [6n
+/ # [6nid student2
+uid=1002(student2) gid=1002(student2) groups=1002(student2),1021(dev_team1)
+/ # [6nsu -s /bin/sh student3
+/ $ [6nls /usr/share/nginx/html/team_share
+/ $ [6necho "종료코드: $?"
+종료코드: 0
+/ $ [6ncd /usr/share/nginx/html/team_share
+/usr/share/nginx/html/team_share $ [6nexit
+/ # [6nsu -s /bin/sh student2
+/ $ [6nls /home/student1/dev_share
+[0;0mreport1.hwp[m  [1;32mtest.sh[m
+/ $ [6n/home/student1/dev_share/test.sh
+==============================
+ 실행 테스트 성공
+ 실행 사용자: student2
+==============================
+/ $ [6nexit
+/ # [6nsu -s /bin/sh student3
+/ $ [6nls /home/student1/dev_share
+ls: can't open '/home/student1/dev_share': Permission denied
+/ $ [6ncat /home/student1/dev_share/report1.hwp
+cat: can't open '/home/student1/dev_share/report1.hwp': Permission denied
+/ $ [6n/home/student1/dev_share/test.sh
+sh: /home/student1/dev_share/test.sh: Permission denied
+/ $ [6nexit
+/ # [6n
+/ # [6nsu -s /bin/sh student6
+su: unknown user student6
+/ # [6nls /home/student1/dev_share
+[0;0mreport1.hwp[m  [1;32mtest.sh[m
+/ # [6n
+/ # [6nexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro.local/Users/mac/linux/week03/web_service[0m[27m[24m[Jmac@macui-MacBookPro web_service % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri Apr  3 09:42:46 2026
