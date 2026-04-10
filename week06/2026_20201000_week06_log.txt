@@ -1,0 +1,24 @@
+Script started on Fri Apr 10 10:11:37 2026
+[1m[7m%[27m[1m[0m                                                                               ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week06[0m[27m[24m[Jmac@macui-MacBookPro-2 week06 % [K[?2004h[7mdocker ps[27m
+[K[A[32C[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[1B[K[?2004l
+CONTAINER ID   IMAGE          COMMAND                   CREATED         STATUS         PORTS                                     NAMES
+a4810912c463   nginx:alpine   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes   0.0.0.0:80->80/tcp, [::]:80->80/tcp       my-web-proxy
+8d1f57532cab   nginx:alpine   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   stress-nginx
+[1m[7m%[27m[1m[0m                                                                               ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week06[0m[27m[24m[Jmac@macui-MacBookPro-2 week06 % [K[?2004h[7mdocker exec stress-nginx ps -ef | grep nginx[27m[44D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27ms[27mt[27mr[27me[27ms[27ms[27m-[27mn[27mg[27mi[27mn[27mx[27m [27mp[27ms[27m [27m-[27me[27mf[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27mn[27mg[27mi[27mn[27mx[?2004l
+    1 root      0:00 nginx: master process nginx -g daemon off;
+   30 nginx     0:00 nginx: worker process
+   31 nginx     0:00 nginx: worker process
+   32 nginx     0:00 nginx: worker process
+[1m[7m%[27m[1m[0m                                                                               ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week06[0m[27m[24m[Jmac@macui-MacBookPro-2 week06 % [K[?2004h[7mdocker exec my-web-proxy ps -ef | grep nginx[27m[44D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mm[27my[27m-[27mw[27me[27mb[27m-[27mp[27mr[27mo[27mx[27my[27m [27mp[27ms[27m [27m-[27me[27mf[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27mn[27mg[27mi[27mn[27mx[?2004l
+    1 root      0:00 nginx: master process nginx -g daemon off;
+   30 nginx     0:00 nginx: worker process
+   31 nginx     0:00 nginx: worker process
+   32 nginx     0:00 nginx: worker process
+[1m[7m%[27m[1m[0m                                                                               ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week06[0m[27m[24m[Jmac@macui-MacBookPro-2 week06 % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri Apr 10 10:12:10 2026
