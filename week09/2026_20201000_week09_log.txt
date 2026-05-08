@@ -1,0 +1,828 @@
+Script started on Fri May  8 09:54:54 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week09[0m[27m[24m[Jmac@macui-MacBookPro-2 week09 % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+failed to connect to the docker API at unix:///Users/mac/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/mac/.docker/run/docker.sock: connect: no such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week09[0m[27m[24m[Jmac@macui-MacBookPro-2 week09 % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week09[0m[27m[24m[Jmac@macui-MacBookPro-2 week09 % [K[?2004h[7mdocker run -it --privileged --name linux_lab \[27m
+[7m  -v ~/linux/week09:/week09 \[27m[K
+[7m  ubuntu:22.04 /bin/bash[27m[K[A[A[8C[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27m-[27m-[27mp[27mr[27mi[27mv[27mi[27ml[27me[27mg[27me[27md[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27ml[27mi[27mn[27mu[27mx[27m_[27ml[27ma[27mb[27m [27m\[1B[27m [27m [27m-[27mv[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m0[27m9[27m:[27m/[27mw[27me[27me[27mk[27m0[27m9[27m [27m\[1B[27m [27m [27mu[27mb[27mu[27mn[27mt[27mu[27m:[27m2[27m2[27m.[27m0[27m4[27m [27m/[27mb[27mi[27mn[27m/[27mb[27ma[27ms[27mh[?2004l
+Unable to find image 'ubuntu:22.04' locally
+22.04: Pulling from library/ubuntu
+
+[1A[2K6edbc812af48: Pulling fs layer [1B
+[1A[2K6d89c792969a: Downloading  1.049MB/1.98MB[1B[1A[2K6d89c792969a: Downloading  1.049MB/1.98MB[1B[1A[2K6d89c792969a: Downloading  1.049MB/1.98MB[1B[1A[2K6d89c792969a: Downloading  1.049MB/1.98MB[1B[1A[2K6d89c792969a: Downloading  1.049MB/1.98MB[1B[1A[2K6d89c792969a: Download complete [1B[2A[2K6edbc812af48: Downloading  1.049MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  1.049MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  2.097MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  2.097MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  3.146MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  3.146MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  4.194MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  4.194MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  5.243MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  6.291MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  6.291MB/27.61MB[2B[2A[2K6edbc812af48: Downloading   7.34MB/27.61MB[2B[2A[2K6edbc812af48: Downloading   7.34MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  8.389MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  8.389MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  9.437MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  9.437MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  10.49MB/27.61MB[2B[2A[2K6edbc812af48: Downloading   11.3MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  11.53MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  12.58MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  12.58MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  13.63MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  13.63MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  14.68MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  14.68MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  15.73MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  16.78MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  16.78MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  17.83MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  17.83MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  18.87MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  18.87MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  19.92MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  19.92MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  20.97MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  22.02MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  22.02MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  23.07MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  23.07MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  24.12MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  24.12MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  25.17MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  25.17MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  26.21MB/27.61MB[2B[2A[2K6edbc812af48: Downloading  26.21MB/27.61MB[2B[2A[2K6edbc812af48: Download complete [2B[2A[2K6edbc812af48: Extracting 1 s[2B[2A[2K6edbc812af48: Extracting 1 s[2B[2A[2K6edbc812af48: Extracting 1 s[2B[2A[2K6edbc812af48: Extracting 1 s[2B[2A[2K6edbc812af48: Pull complete [2BDigest: sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f5191cf0eb83fe565b63dd7
+Status: Downloaded newer image for ubuntu:22.04
+[?2004h]0;root@b28835473ec3: /root@b28835473ec3:/# [7mapt update && apt install -y lvm2 fio rsync[27mapt update && apt install -y lvm2 fio rsync
+[?2004l[33m0% [Working][0m[33m0% [Connecting to ports.ubuntu.com (91.189.92.20)][0m                                                  Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+[33m                                                  0% [1 InRelease 11.8 kB/270 kB 4%][0m[33m0% [1 InRelease 45.6 kB/270 kB 17%][0m[33m                                   0% [1 InRelease 183 kB/270 kB 68%][0m[33m                                  0% [Working][0m[33m0% [Waiting for headers][0m                        Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [128 kB]
+[33m0% [2 InRelease 3316 B/128 kB 3%][0m[33m                                 0% [Working][0m[33m0% [Waiting for headers][0m                        Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease [127 kB]
+[33m0% [3 InRelease 0 B/127 kB 0%][0m[33m                              0% [Working][0m[33m0% [Waiting for headers][0m[33m0% [Connecting to ports.ubuntu.com (91.189.92.20)][0m[33m                                                  0% [Waiting for headers][0m                        Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [129 kB]
+[33m0% [4 InRelease 11.8 kB/129 kB 9%][0m[33m0% [4 InRelease 43.2 kB/129 kB 33%][0m[33m                                   0% [Working][0m[33m13% [Waiting for headers][0m                         Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/restricted arm64 Packages [24.2 kB]
+[33m13% [5 Packages 2179 B/24.2 kB 9%][0m[33m                                  13% [Working][0m[33m13% [5 Packages store 0 B] [Waiting for headers][0m[33m                                                14% [Waiting for headers][0m                         Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [17.2 MB]
+[33m14% [6 Packages 2173 B/17.2 MB 0%][0m[33m15% [6 Packages 430 kB/17.2 MB 2%][0m[33m18% [6 Packages 2126 kB/17.2 MB 12%]                          451 kB/s 1min 33s[0m[33m23% [6 Packages 4873 kB/17.2 MB 28%]                          451 kB/s 1min 27s[0m[33m28% [6 Packages 7628 kB/17.2 MB 44%]                          451 kB/s 1min 21s[0m[33m32% [6 Packages 10.4 MB/17.2 MB 61%]                          451 kB/s 1min 15s[0m[33m37% [6 Packages 13.2 MB/17.2 MB 77%]                           451 kB/s 1min 9s[0m[33m42% [6 Packages 15.9 MB/17.2 MB 93%]                           451 kB/s 1min 2s[0m[33m45% [Working]                                                      451 kB/s 60s[0m[33m45% [6 Packages store 0 B] [Connecting to ports.ubuntu.com]        451 kB/s 60s[0m[33m45% [Connecting to ports.ubuntu.com (91.189.92.20)]                451 kB/s 60s[0m                                                                               Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1758 kB]
+[33m45% [7 Packages 14.2 kB/1758 kB 1%]                                451 kB/s 60s[0m[33m45% [7 Packages 51.9 kB/1758 kB 3%]                                451 kB/s 60s[0m[33m45% [7 Packages 221 kB/1758 kB 13%]                                451 kB/s 59s[0m[33m47% [7 Packages 965 kB/1758 kB 55%]                                451 kB/s 58s[0m[33m48% [Working]                                                      451 kB/s 56s[0m[33m48% [7 Packages store 0 B] [Waiting for headers]                   451 kB/s 56s[0m[33m49% [Waiting for headers]                                          451 kB/s 56s[0m                                                                               Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/multiverse arm64 Packages [224 kB]
+[33m49% [8 Packages 20.0 kB/224 kB 9%]                                 451 kB/s 56s[0m[33m49% [Working]                                                      451 kB/s 55s[0m[33m49% [8 Packages store 0 B] [Waiting for headers]                   451 kB/s 55s[0m[33m50% [Waiting for headers]                                          451 kB/s 55s[0m                                                                               Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [1658 kB]
+[33m50% [9 Packages 30.2 kB/1658 kB 2%]                                451 kB/s 55s[0m[33m53% [Working]                                                      3116 kB/s 7s[0m[33m53% [9 Packages store 0 B] [Waiting for headers]                   3116 kB/s 7s[0m[33m53% [Waiting for headers]                                          3116 kB/s 7s[0m                                                                               Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [4045 kB]
+[33m53% [10 Packages 20.5 kB/4045 kB 1%]                               3116 kB/s 7s[0m[33m58% [10 Packages 2846 kB/4045 kB 70%]                              3116 kB/s 6s[0m[33m60% [Working]                                                      3116 kB/s 6s[0m[33m60% [10 Packages store 0 B] [Waiting for headers]                  3116 kB/s 6s[0m[33m61% [Waiting for headers]                                          3116 kB/s 6s[0m                                                                               Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/restricted arm64 Packages [7201 kB]
+[33m61% [11 Packages 33.1 kB/7201 kB 0%]                               3116 kB/s 6s[0m[33m66% [11 Packages 2720 kB/7201 kB 38%]                              3116 kB/s 5s[0m[33m71% [11 Packages 5477 kB/7201 kB 76%]                              3116 kB/s 4s[0m[33m74% [Working]                                                      3116 kB/s 3s[0m[33m74% [11 Packages store 0 B] [Waiting for headers]                  3116 kB/s 3s[0m[33m74% [Waiting for headers]                                          3116 kB/s 3s[0m                                                                               Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/multiverse arm64 Packages [63.1 kB]
+[33m74% [12 Packages 35.3 kB/63.1 kB 56%]                              3116 kB/s 3s[0m[33m74% [Working]                                                      3116 kB/s 3s[0m[33m74% [12 Packages store 0 B] [Waiting for headers]                  3116 kB/s 3s[0m[33m75% [Waiting for headers]                                          3116 kB/s 3s[0m                                                                               Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-backports/universe arm64 Packages [33.7 kB]
+[33m75% [13 Packages 33.7 kB/33.7 kB 100%]                             3116 kB/s 3s[0m[33m75% [Working]                                                      3116 kB/s 3s[0m[33m75% [13 Packages store 0 B] [Waiting for headers]                  3116 kB/s 3s[0m[33m76% [Waiting for headers]                                          3116 kB/s 3s[0m                                                                               Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-backports/main arm64 Packages [82.4 kB]
+[33m76% [14 Packages 22.4 kB/82.4 kB 27%]                              3116 kB/s 3s[0m[33m76% [Working]                                                      3116 kB/s 3s[0m[33m76% [14 Packages store 0 B] [Waiting for headers]                  3116 kB/s 3s[0m[33m76% [Waiting for headers]                                          3116 kB/s 3s[0m                                                                               Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-security/multiverse arm64 Packages [40.7 kB]
+[33m76% [15 Packages 40.7 kB/40.7 kB 100%]                             3116 kB/s 3s[0m[33m76% [Working]                                                      3116 kB/s 3s[0m[33m76% [15 Packages store 0 B] [Waiting for headers]                  3116 kB/s 3s[0m[33m77% [Waiting for headers]                                          3116 kB/s 3s[0m                                                                               Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [3731 kB]
+[33m77% [16 Packages 29.9 kB/3731 kB 1%]                               3116 kB/s 3s[0m[33m82% [16 Packages 2897 kB/3731 kB 78%]                              3116 kB/s 2s[0m[33m84% [Working]                                                      3116 kB/s 2s[0m[33m84% [16 Packages store 0 B] [Waiting for headers]                  3116 kB/s 2s[0m[33m84% [Waiting for headers]                                          3116 kB/s 2s[0m                                                                               Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-security/restricted arm64 Packages [6967 kB]
+[33m84% [17 Packages 34.7 kB/6967 kB 0%]                               3116 kB/s 2s[0m[33m89% [17 Packages 2762 kB/6967 kB 40%]                              3116 kB/s 1s[0m[33m94% [17 Packages 5543 kB/6967 kB 80%]                              3116 kB/s 0s[0m[33m96% [Waiting for headers]                                          3116 kB/s 0s[0m[33m96% [17 Packages store 0 B] [Waiting for headers]                  3116 kB/s 0s[0m[33m97% [Waiting for headers]                                          3586 kB/s 0s[0m                                                                               Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-security/universe arm64 Packages [1358 kB]
+[33m97% [18 Packages 14.0 kB/1358 kB 1%]                               3586 kB/s 0s[0m[33m99% [Working]                                                      3586 kB/s 0s[0m[33m99% [18 Packages store 0 B]                                        3586 kB/s 0s[0m[33m100% [Working]                                                     3586 kB/s 0s[0m                                                                               Fetched 45.1 MB in 19s (2406 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 46%Reading package lists... 46%Reading package lists... 65%Reading package lists... 65%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 78%Reading package lists... 78%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 46%Reading package lists... 46%Reading package lists... 65%Reading package lists... 65%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 78%Reading package lists... 78%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  dmeventd dmsetup ibverbs-providers libaio1 libargon2-1
+  libboost-iostreams1.74.0 libboost-thread1.74.0 libbsd0 libcryptsetup12
+  libdaxctl1 libdevmapper-event1.02.1 libdevmapper1.02.1 libedit2 libexpat1
+  libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libjson-c5 libkmod2
+  liblvm2cmd2.03 libmd0 libmpdec3 libndctl6 libnl-3-200 libnl-route-3-200
+  libnuma1 libpmem1 libpmemblk1 libpmemobj1 libpopt0 libpython3-stdlib
+  libpython3.10-minimal libpython3.10-stdlib librados2 librbd1 librdmacm1
+  libreadline8 libsqlite3-0 media-types python3 python3-minimal python3.10
+  python3.10-minimal readline-common thin-provisioning-tools
+Suggested packages:
+  gnuplot gfio python-scipy python3-doc python3-tk python3-venv
+  python3.10-venv python3.10-doc binutils binfmt-support readline-doc
+  openssh-client openssh-server python3-braceexpand
+The following NEW packages will be installed:
+  dmeventd dmsetup fio ibverbs-providers libaio1 libargon2-1
+  libboost-iostreams1.74.0 libboost-thread1.74.0 libbsd0 libcryptsetup12
+  libdaxctl1 libdevmapper-event1.02.1 libdevmapper1.02.1 libedit2 libexpat1
+  libgfapi0 libgfrpc0 libgfxdr0 libglusterfs0 libibverbs1 libjson-c5 libkmod2
+  liblvm2cmd2.03 libmd0 libmpdec3 libndctl6 libnl-3-200 libnl-route-3-200
+  libnuma1 libpmem1 libpmemblk1 libpmemobj1 libpopt0 libpython3-stdlib
+  libpython3.10-minimal libpython3.10-stdlib librados2 librbd1 librdmacm1
+  libreadline8 libsqlite3-0 lvm2 media-types python3 python3-minimal
+  python3.10 python3.10-minimal readline-common rsync thin-provisioning-tools
+0 upgraded, 50 newly installed, 0 to remove and 2 not upgraded.
+Need to get 22.6 MB of archives.
+After this operation, 78.9 MB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connecting to ports.ubuntu.com (91.189.92.20)][0m[33m                                                  0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m[33m0% [Connecting to ports.ubuntu.com (91.189.92.20)][0m[33m                                                  0% [Waiting for headers][0m                        Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-minimal arm64 3.10.12-1~22.04.15 [814 kB]
+[33m0% [1 libpython3.10-minimal 11.8 kB/814 kB 1%][0m[33m0% [1 libpython3.10-minimal 44.4 kB/814 kB 5%][0m[33m1% [1 libpython3.10-minimal 183 kB/814 kB 23%][0m[33m3% [1 libpython3.10-minimal 804 kB/814 kB 99%][0m[33m                                              3% [Working][0m            Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libexpat1 arm64 2.4.7-1ubuntu0.7 [77.5 kB]
+[33m3% [2 libexpat1 37.6 kB/77.5 kB 49%][0m[33m                                    4% [Working][0m            Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10-minimal arm64 3.10.12-1~22.04.15 [2246 kB]
+[33m4% [3 python3.10-minimal 25.4 kB/2246 kB 1%][0m[33m                                            12% [Working][0m             Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3-minimal arm64 3.10.6-1~22.04.1 [24.3 kB]
+[33m12% [4 python3-minimal 24.3 kB/24.3 kB 100%][0m[33m                                            13% [Working][0m             Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 media-types all 7.0.0 [25.5 kB]
+[33m13% [5 media-types 25.5 kB/25.5 kB 100%][0m[33m                                        13% [Working][0m             Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmpdec3 arm64 2.5.1-2build2 [89.0 kB]
+[33m13% [6 libmpdec3 22.6 kB/89.0 kB 25%][0m[33m                                     14% [Working][0m             Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 readline-common all 8.1.2-1 [53.5 kB]
+[33m14% [7 readline-common 32.8 kB/53.5 kB 61%][0m[33m                                           15% [Working][0m             Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libreadline8 arm64 8.1.2-1 [153 kB]
+[33m15% [8 libreadline8 10.6 kB/153 kB 7%][0m[33m                                      16% [Working][0m[33m16% [Connecting to ports.ubuntu.com (91.189.91.104)][0m[33m16% [Waiting for headers]                                          576 kB/s 33s[0m                                                                               Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsqlite3-0 arm64 3.37.2-2ubuntu0.5 [636 kB]
+[33m16% [9 libsqlite3-0 11.8 kB/636 kB 2%]                             576 kB/s 33s[0m[33m16% [9 libsqlite3-0 43.2 kB/636 kB 7%]                             576 kB/s 33s[0m[33m16% [9 libsqlite3-0 176 kB/636 kB 28%]                             576 kB/s 32s[0m[33m18% [Working]                                                      576 kB/s 32s[0m                                                                               Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3.10-stdlib arm64 3.10.12-1~22.04.15 [1847 kB]
+[33m18% [10 libpython3.10-stdlib 16.7 kB/1847 kB 1%]                   576 kB/s 32s[0m[33m25% [10 libpython3.10-stdlib 1805 kB/1847 kB 98%]                  576 kB/s 29s[0m[33m25% [Working]                                                      576 kB/s 28s[0m                                                                               Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3.10 arm64 3.10.12-1~22.04.15 [508 kB]
+[33m25% [11 python3.10 7068 B/508 kB 1%]                               576 kB/s 28s[0m[33m27% [Working]                                                      576 kB/s 28s[0m                                                                               Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpython3-stdlib arm64 3.10.6-1~22.04.1 [6812 B]
+[33m27% [12 libpython3-stdlib 6812 B/6812 B 100%]                      576 kB/s 28s[0m[33m28% [Working]                                                      576 kB/s 28s[0m                                                                               Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 python3 arm64 3.10.6-1~22.04.1 [22.8 kB]
+[33m28% [13 python3 15.5 kB/22.8 kB 68%]                               576 kB/s 28s[0m[33m28% [Waiting for headers]                                          576 kB/s 27s[0m                                                                               Get:14 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpopt0 arm64 1.18-3build1 [28.0 kB]
+[33m28% [14 libpopt0 4096 B/28.0 kB 15%]                               576 kB/s 27s[0m[33m29% [Waiting for headers]                                          576 kB/s 27s[0m                                                                               Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 rsync arm64 3.2.7-0ubuntu0.22.04.4 [430 kB]
+[33m29% [15 rsync 29.7 kB/430 kB 7%]                                   576 kB/s 27s[0m[33m31% [Working]                                                      576 kB/s 27s[0m                                                                               Get:16 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libaio1 arm64 0.3.112-13build1 [7018 B]
+[33m31% [16 libaio1 7018 B/7018 B 100%]                                576 kB/s 27s[0m[33m31% [Working]                                                      576 kB/s 27s[0m                                                                               Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdevmapper1.02.1 arm64 2:1.02.175-2.1ubuntu5 [129 kB]
+[33m31% [17 libdevmapper1.02.1 23.9 kB/129 kB 18%]                     576 kB/s 27s[0m[33m32% [Working]                                                      576 kB/s 26s[0m                                                                               Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdevmapper-event1.02.1 arm64 2:1.02.175-2.1ubuntu5 [12.0 kB]
+[33m32% [18 libdevmapper-event1.02.1 12.0 kB/12.0 kB 100%]             576 kB/s 26s[0m[33m32% [Waiting for headers]                                          576 kB/s 26s[0m                                                                               Get:19 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libmd0 arm64 1.0.4-1build1 [23.8 kB]
+[33m32% [19 libmd0 23.8 kB/23.8 kB 100%]                               576 kB/s 26s[0m[33m33% [Working]                                                      576 kB/s 26s[0m                                                                               Get:20 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libbsd0 arm64 0.11.5-1 [43.7 kB]
+[33m33% [20 libbsd0 16.6 kB/43.7 kB 38%]                               576 kB/s 26s[0m[33m33% [Working]                                                      576 kB/s 26s[0m[33m33% [Connecting to ports.ubuntu.com (91.189.91.104)]               576 kB/s 26s[0m                                                                               Get:21 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libedit2 arm64 3.1-20210910-1build1 [96.0 kB]
+[33m33% [21 libedit2 14.2 kB/96.0 kB 15%]                              576 kB/s 26s[0m[33m34% [21 libedit2 51.8 kB/96.0 kB 54%]                              581 kB/s 26s[0m[33m34% [Working]                                                      581 kB/s 26s[0m                                                                               Get:22 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dmsetup arm64 2:1.02.175-2.1ubuntu5 [75.8 kB]
+[33m34% [22 dmsetup 2605 B/75.8 kB 3%]                                 581 kB/s 26s[0m[33m35% [Working]                                                      581 kB/s 26s[0m                                                                               Get:23 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 liblvm2cmd2.03 arm64 2.03.11-2.1ubuntu5 [693 kB]
+[33m35% [23 liblvm2cmd2.03 2604 B/693 kB 0%]                           581 kB/s 26s[0m[33m36% [23 liblvm2cmd2.03 318 kB/693 kB 46%]                          581 kB/s 25s[0m[33m38% [Working]                                                      581 kB/s 25s[0m                                                                               Get:24 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dmeventd arm64 2:1.02.175-2.1ubuntu5 [36.0 kB]
+[33m38% [24 dmeventd 16.6 kB/36.0 kB 46%]                              581 kB/s 25s[0m[33m38% [Working]                                                      581 kB/s 25s[0m                                                                               Get:25 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 lvm2 arm64 2.03.11-2.1ubuntu5 [1087 kB]
+[33m38% [25 lvm2 15.0 kB/1087 kB 1%]                                   581 kB/s 25s[0m[33m42% [Working]                                                      581 kB/s 23s[0m                                                                               Get:26 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libargon2-1 arm64 0~20171227-0.3 [18.6 kB]
+[33m42% [26 libargon2-1 18.6 kB/18.6 kB 100%]                          581 kB/s 23s[0m[33m43% [Working]                                                      581 kB/s 23s[0m                                                                               Get:27 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libjson-c5 arm64 0.15-3~ubuntu1.22.04.2 [32.7 kB]
+[33m43% [27 libjson-c5 23.3 kB/32.7 kB 71%]                            581 kB/s 23s[0m[33m43% [Working]                                                      581 kB/s 23s[0m                                                                               Get:28 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcryptsetup12 arm64 2:2.4.3-1ubuntu1.3 [208 kB]
+[33m43% [28 libcryptsetup12 17.1 kB/208 kB 8%]                         581 kB/s 23s[0m[33m45% [Working]                                                      581 kB/s 22s[0m                                                                               Get:29 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 libkmod2 arm64 29-1ubuntu1.1 [46.5 kB]
+[33m45% [29 libkmod2 34.5 kB/46.5 kB 74%]                              581 kB/s 22s[0m[33m45% [Working]                                                      581 kB/s 22s[0m                                                                               Get:30 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnuma1 arm64 2.0.14-3ubuntu2 [22.4 kB]
+[33m45% [30 libnuma1 22.4 kB/22.4 kB 100%]                             581 kB/s 22s[0m[33m46% [Working]                                                      581 kB/s 22s[0m                                                                               Get:31 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgfxdr0 arm64 10.1-1ubuntu0.2 [21.5 kB]
+[33m46% [31 libgfxdr0 21.5 kB/21.5 kB 100%]                            581 kB/s 22s[0m[33m46% [Working]                                                      581 kB/s 22s[0m                                                                               Get:32 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libglusterfs0 arm64 10.1-1ubuntu0.2 [276 kB]
+[33m46% [32 libglusterfs0 18.4 kB/276 kB 7%]                           581 kB/s 22s[0m[33m47% [Working]                                                      581 kB/s 22s[0m                                                                               Get:33 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgfrpc0 arm64 10.1-1ubuntu0.2 [46.7 kB]
+[33m47% [33 libgfrpc0 4096 B/46.7 kB 9%]                               581 kB/s 22s[0m[33m48% [Working]                                                      581 kB/s 22s[0m                                                                               Get:34 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgfapi0 arm64 10.1-1ubuntu0.2 [74.4 kB]
+[33m48% [34 libgfapi0 22.7 kB/74.4 kB 30%]                             581 kB/s 21s[0m[33m49% [Working]                                                      581 kB/s 21s[0m                                                                               Get:35 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnl-3-200 arm64 3.5.0-0.1 [58.1 kB]
+[33m49% [35 libnl-3-200 13.5 kB/58.1 kB 23%]                           581 kB/s 21s[0m[33m49% [Working]                                                      581 kB/s 21s[0m                                                                               Get:36 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnl-route-3-200 arm64 3.5.0-0.1 [173 kB]
+[33m49% [36 libnl-route-3-200 20.7 kB/173 kB 12%]                      581 kB/s 21s[0m[33m50% [Working]                                                      581 kB/s 21s[0m                                                                               Get:37 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libibverbs1 arm64 39.0-1 [66.3 kB]
+[33m50% [37 libibverbs1 8397 B/66.3 kB 13%]                            581 kB/s 21s[0m[33m51% [Working]                                                      581 kB/s 21s[0m                                                                               Get:38 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libdaxctl1 arm64 72.1-1 [18.9 kB]
+[33m51% [38 libdaxctl1 18.9 kB/18.9 kB 100%]                           581 kB/s 21s[0m[33m51% [Working]                                                      581 kB/s 21s[0m                                                                               Get:39 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libndctl6 arm64 72.1-1 [56.7 kB]
+[33m51% [39 libndctl6 23.6 kB/56.7 kB 42%]                             581 kB/s 21s[0m[33m52% [Working]                                                      581 kB/s 21s[0m                                                                               Get:40 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpmem1 arm64 1.11.1-3build1 [34.7 kB]
+[33m52% [40 libpmem1 32.1 kB/34.7 kB 93%]                              495 kB/s 24s[0m[33m52% [Waiting for headers]                                          495 kB/s 24s[0m                                                                               Get:41 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libpmemblk1 arm64 1.11.1-3build1 [65.6 kB]
+[33m53% [41 libpmemblk1 25.8 kB/65.6 kB 39%]                           495 kB/s 24s[0m[33m53% [Working]                                                      495 kB/s 24s[0m                                                                               Get:42 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libboost-iostreams1.74.0 arm64 1.74.0-14ubuntu3 [243 kB]
+[33m53% [42 libboost-iostreams1.74.0 34.5 kB/243 kB 14%]               495 kB/s 24s[0m[33m54% [Working]                                                      495 kB/s 24s[0m                                                                               Get:43 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libboost-thread1.74.0 arm64 1.74.0-14ubuntu3 [260 kB]
+[33m54% [43 libboost-thread1.74.0 15.6 kB/260 kB 6%]                   495 kB/s 24s[0m[33m56% [Working]                                                      495 kB/s 23s[0m                                                                               Get:44 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 librdmacm1 arm64 39.0-1 [70.4 kB]
+[33m56% [44 librdmacm1 16.4 kB/70.4 kB 23%]                            495 kB/s 23s[0m[33m56% [Working]                                                      495 kB/s 23s[0m                                                                               Get:45 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 librados2 arm64 17.2.9-0ubuntu0.22.04.3 [3455 kB]
+[33m56% [45 librados2 12.2 kB/3455 kB 0%]                              495 kB/s 23s[0m[33m66% [45 librados2 2859 kB/3455 kB 83%]                             495 kB/s 17s[0m[33m69% [Working]                                                      495 kB/s 16s[0m                                                                               Get:46 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpmemobj1 arm64 1.11.1-3build1 [123 kB]
+[33m69% [46 libpmemobj1 30.6 kB/123 kB 25%]                            495 kB/s 16s[0m[33m70% [Working]                                                      495 kB/s 16s[0m                                                                               Get:47 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 librbd1 arm64 17.2.9-0ubuntu0.22.04.3 [3309 kB]
+[33m70% [47 librbd1 38.8 kB/3309 kB 1%]                                495 kB/s 16s[0m[33m80% [47 librbd1 2746 kB/3309 kB 83%]                               495 kB/s 10s[0m[33m82% [Working]                                                       495 kB/s 9s[0m                                                                               Get:48 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 fio arm64 3.28-1 [4043 kB]
+[33m82% [48 fio 25.8 kB/4043 kB 1%]                                     495 kB/s 9s[0m[33m92% [48 fio 2770 kB/4043 kB 69%]                                    495 kB/s 4s[0m[33m97% [Waiting for headers]                                           495 kB/s 1s[0m                                                                               Get:49 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 ibverbs-providers arm64 39.0-1 [334 kB]
+[33m97% [49 ibverbs-providers 26.0 kB/334 kB 8%]                        495 kB/s 1s[0m[33m98% [Working]                                                       495 kB/s 0s[0m                                                                               Get:50 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 thin-provisioning-tools arm64 0.9.0-2ubuntu1 [400 kB]
+[33m98% [50 thin-provisioning-tools 19.7 kB/400 kB 5%]                  495 kB/s 0s[0m[33m100% [Working]                                                      495 kB/s 0s[0m                                                                               Fetched 22.6 MB in 54s (421 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;23r8[1ASelecting previously unselected package libpython3.10-minimal:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4387 files and directories currently installed.)
+Preparing to unpack .../libpython3.10-minimal_3.10.12-1~22.04.15_arm64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 8Unpacking libpython3.10-minimal:arm64 (3.10.12-1~22.04.15) ...
+Selecting previously unselected package libexpat1:arm64.
+Preparing to unpack .../libexpat1_2.4.7-1ubuntu0.7_arm64.deb ...
+7[24;0f[42m[30mProgress: [  1%][49m[39m [..........................................................] 8Unpacking libexpat1:arm64 (2.4.7-1ubuntu0.7) ...
+Selecting previously unselected package python3.10-minimal.
+Preparing to unpack .../python3.10-minimal_3.10.12-1~22.04.15_arm64.deb ...
+7[24;0f[42m[30mProgress: [  2%][49m[39m [#.........................................................] 8Unpacking python3.10-minimal (3.10.12-1~22.04.15) ...
+Setting up libpython3.10-minimal:arm64 (3.10.12-1~22.04.15) ...
+7[24;0f[42m[30mProgress: [  3%][49m[39m [##........................................................] 8Setting up libexpat1:arm64 (2.4.7-1ubuntu0.7) ...
+7[24;0f[42m[30mProgress: [  4%][49m[39m [##........................................................] 8Setting up python3.10-minimal (3.10.12-1~22.04.15) ...
+7[24;0f[42m[30mProgress: [  5%][49m[39m [###.......................................................] 8Selecting previously unselected package python3-minimal.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4691 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.10.6-1~22.04.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [  6%][49m[39m [###.......................................................] 8Unpacking python3-minimal (3.10.6-1~22.04.1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_7.0.0_all.deb ...
+7[24;0f[42m[30mProgress: [  7%][49m[39m [####......................................................] 8Unpacking media-types (7.0.0) ...
+Selecting previously unselected package libmpdec3:arm64.
+Preparing to unpack .../2-libmpdec3_2.5.1-2build2_arm64.deb ...
+7[24;0f[42m[30mProgress: [  8%][49m[39m [####......................................................] 8Unpacking libmpdec3:arm64 (2.5.1-2build2) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../3-readline-common_8.1.2-1_all.deb ...
+7[24;0f[42m[30mProgress: [  9%][49m[39m [#####.....................................................] 8Unpacking readline-common (8.1.2-1) ...
+Selecting previously unselected package libreadline8:arm64.
+Preparing to unpack .../4-libreadline8_8.1.2-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 10%][49m[39m [######....................................................] 8Unpacking libreadline8:arm64 (8.1.2-1) ...
+Selecting previously unselected package libsqlite3-0:arm64.
+Preparing to unpack .../5-libsqlite3-0_3.37.2-2ubuntu0.5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 11%][49m[39m [######....................................................] 8Unpacking libsqlite3-0:arm64 (3.37.2-2ubuntu0.5) ...
+Selecting previously unselected package libpython3.10-stdlib:arm64.
+Preparing to unpack .../6-libpython3.10-stdlib_3.10.12-1~22.04.15_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 8Unpacking libpython3.10-stdlib:arm64 (3.10.12-1~22.04.15) ...
+Selecting previously unselected package python3.10.
+Preparing to unpack .../7-python3.10_3.10.12-1~22.04.15_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 13%][49m[39m [#######...................................................] 8Unpacking python3.10 (3.10.12-1~22.04.15) ...
+Selecting previously unselected package libpython3-stdlib:arm64.
+Preparing to unpack .../8-libpython3-stdlib_3.10.6-1~22.04.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 14%][49m[39m [########..................................................] 8Unpacking libpython3-stdlib:arm64 (3.10.6-1~22.04.1) ...
+Setting up python3-minimal (3.10.6-1~22.04.1) ...
+7[24;0f[42m[30mProgress: [ 15%][49m[39m [########..................................................] 8Selecting previously unselected package python3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5121 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.10.6-1~22.04.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 16%][49m[39m [#########.................................................] 8Unpacking python3 (3.10.6-1~22.04.1) ...
+Selecting previously unselected package libpopt0:arm64.
+Preparing to unpack .../01-libpopt0_1.18-3build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 17%][49m[39m [##########................................................] 8Unpacking libpopt0:arm64 (1.18-3build1) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../02-rsync_3.2.7-0ubuntu0.22.04.4_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 18%][49m[39m [##########................................................] 8Unpacking rsync (3.2.7-0ubuntu0.22.04.4) ...
+Selecting previously unselected package libaio1:arm64.
+Preparing to unpack .../03-libaio1_0.3.112-13build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 19%][49m[39m [###########...............................................] 8Unpacking libaio1:arm64 (0.3.112-13build1) ...
+Selecting previously unselected package libdevmapper1.02.1:arm64.
+Preparing to unpack .../04-libdevmapper1.02.1_2%3a1.02.175-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking libdevmapper1.02.1:arm64 (2:1.02.175-2.1ubuntu5) ...
+Selecting previously unselected package libdevmapper-event1.02.1:arm64.
+Preparing to unpack .../05-libdevmapper-event1.02.1_2%3a1.02.175-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 21%][49m[39m [############..............................................] 8Unpacking libdevmapper-event1.02.1:arm64 (2:1.02.175-2.1ubuntu5) ...
+Selecting previously unselected package libmd0:arm64.
+Preparing to unpack .../06-libmd0_1.0.4-1build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [############..............................................] 8Unpacking libmd0:arm64 (1.0.4-1build1) ...
+Selecting previously unselected package libbsd0:arm64.
+Preparing to unpack .../07-libbsd0_0.11.5-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 23%][49m[39m [#############.............................................] 8Unpacking libbsd0:arm64 (0.11.5-1) ...
+Selecting previously unselected package libedit2:arm64.
+Preparing to unpack .../08-libedit2_3.1-20210910-1build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Unpacking libedit2:arm64 (3.1-20210910-1build1) ...
+Selecting previously unselected package dmsetup.
+Preparing to unpack .../09-dmsetup_2%3a1.02.175-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 25%][49m[39m [##############............................................] 8Unpacking dmsetup (2:1.02.175-2.1ubuntu5) ...
+Selecting previously unselected package liblvm2cmd2.03:arm64.
+Preparing to unpack .../10-liblvm2cmd2.03_2.03.11-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 26%][49m[39m [###############...........................................] 8Unpacking liblvm2cmd2.03:arm64 (2.03.11-2.1ubuntu5) ...
+Selecting previously unselected package dmeventd.
+Preparing to unpack .../11-dmeventd_2%3a1.02.175-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 27%][49m[39m [###############...........................................] 8Unpacking dmeventd (2:1.02.175-2.1ubuntu5) ...
+Selecting previously unselected package lvm2.
+Preparing to unpack .../12-lvm2_2.03.11-2.1ubuntu5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 28%][49m[39m [################..........................................] 8Unpacking lvm2 (2.03.11-2.1ubuntu5) ...
+Selecting previously unselected package libargon2-1:arm64.
+Preparing to unpack .../13-libargon2-1_0~20171227-0.3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 29%][49m[39m [#################.........................................] 8Unpacking libargon2-1:arm64 (0~20171227-0.3) ...
+Selecting previously unselected package libjson-c5:arm64.
+Preparing to unpack .../14-libjson-c5_0.15-3~ubuntu1.22.04.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 30%][49m[39m [#################.........................................] 8Unpacking libjson-c5:arm64 (0.15-3~ubuntu1.22.04.2) ...
+Selecting previously unselected package libcryptsetup12:arm64.
+Preparing to unpack .../15-libcryptsetup12_2%3a2.4.3-1ubuntu1.3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 31%][49m[39m [##################........................................] 8Unpacking libcryptsetup12:arm64 (2:2.4.3-1ubuntu1.3) ...
+Selecting previously unselected package libkmod2:arm64.
+Preparing to unpack .../16-libkmod2_29-1ubuntu1.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 32%][49m[39m [##################........................................] 8Unpacking libkmod2:arm64 (29-1ubuntu1.1) ...
+Selecting previously unselected package libnuma1:arm64.
+Preparing to unpack .../17-libnuma1_2.0.14-3ubuntu2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [###################.......................................] 8Unpacking libnuma1:arm64 (2.0.14-3ubuntu2) ...
+Selecting previously unselected package libgfxdr0:arm64.
+Preparing to unpack .../18-libgfxdr0_10.1-1ubuntu0.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 34%][49m[39m [###################.......................................] 8Unpacking libgfxdr0:arm64 (10.1-1ubuntu0.2) ...
+Selecting previously unselected package libglusterfs0:arm64.
+Preparing to unpack .../19-libglusterfs0_10.1-1ubuntu0.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 35%][49m[39m [####################......................................] 8Unpacking libglusterfs0:arm64 (10.1-1ubuntu0.2) ...
+Selecting previously unselected package libgfrpc0:arm64.
+Preparing to unpack .../20-libgfrpc0_10.1-1ubuntu0.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 36%][49m[39m [#####################.....................................] 8Unpacking libgfrpc0:arm64 (10.1-1ubuntu0.2) ...
+Selecting previously unselected package libgfapi0:arm64.
+Preparing to unpack .../21-libgfapi0_10.1-1ubuntu0.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 37%][49m[39m [#####################.....................................] 8Unpacking libgfapi0:arm64 (10.1-1ubuntu0.2) ...
+Selecting previously unselected package libnl-3-200:arm64.
+Preparing to unpack .../22-libnl-3-200_3.5.0-0.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 38%][49m[39m [######################....................................] 8Unpacking libnl-3-200:arm64 (3.5.0-0.1) ...
+Selecting previously unselected package libnl-route-3-200:arm64.
+Preparing to unpack .../23-libnl-route-3-200_3.5.0-0.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 39%][49m[39m [######################....................................] 8Unpacking libnl-route-3-200:arm64 (3.5.0-0.1) ...
+Selecting previously unselected package libibverbs1:arm64.
+Preparing to unpack .../24-libibverbs1_39.0-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Unpacking libibverbs1:arm64 (39.0-1) ...
+Selecting previously unselected package libdaxctl1:arm64.
+Preparing to unpack .../25-libdaxctl1_72.1-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 41%][49m[39m [#######################...................................] 8Unpacking libdaxctl1:arm64 (72.1-1) ...
+Selecting previously unselected package libndctl6:arm64.
+Preparing to unpack .../26-libndctl6_72.1-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 42%][49m[39m [########################..................................] 8Unpacking libndctl6:arm64 (72.1-1) ...
+Selecting previously unselected package libpmem1:arm64.
+Preparing to unpack .../27-libpmem1_1.11.1-3build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 43%][49m[39m [#########################.................................] 8Unpacking libpmem1:arm64 (1.11.1-3build1) ...
+Selecting previously unselected package libpmemblk1:arm64.
+Preparing to unpack .../28-libpmemblk1_1.11.1-3build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 44%][49m[39m [#########################.................................] 8Unpacking libpmemblk1:arm64 (1.11.1-3build1) ...
+Selecting previously unselected package libboost-iostreams1.74.0:arm64.
+Preparing to unpack .../29-libboost-iostreams1.74.0_1.74.0-14ubuntu3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 45%][49m[39m [##########################................................] 8Unpacking libboost-iostreams1.74.0:arm64 (1.74.0-14ubuntu3) ...
+Selecting previously unselected package libboost-thread1.74.0:arm64.
+Preparing to unpack .../30-libboost-thread1.74.0_1.74.0-14ubuntu3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 46%][49m[39m [##########################................................] 8Unpacking libboost-thread1.74.0:arm64 (1.74.0-14ubuntu3) ...
+Selecting previously unselected package librdmacm1:arm64.
+Preparing to unpack .../31-librdmacm1_39.0-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 47%][49m[39m [###########################...............................] 8Unpacking librdmacm1:arm64 (39.0-1) ...
+Selecting previously unselected package librados2.
+Preparing to unpack .../32-librados2_17.2.9-0ubuntu0.22.04.3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 48%][49m[39m [###########################...............................] 8Unpacking librados2 (17.2.9-0ubuntu0.22.04.3) ...
+Selecting previously unselected package libpmemobj1:arm64.
+Preparing to unpack .../33-libpmemobj1_1.11.1-3build1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 49%][49m[39m [############################..............................] 8Unpacking libpmemobj1:arm64 (1.11.1-3build1) ...
+Selecting previously unselected package librbd1.
+Preparing to unpack .../34-librbd1_17.2.9-0ubuntu0.22.04.3_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Unpacking librbd1 (17.2.9-0ubuntu0.22.04.3) ...
+Selecting previously unselected package fio.
+Preparing to unpack .../35-fio_3.28-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 51%][49m[39m [#############################.............................] 8Unpacking fio (3.28-1) ...
+Selecting previously unselected package ibverbs-providers:arm64.
+Preparing to unpack .../36-ibverbs-providers_39.0-1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 52%][49m[39m [##############################............................] 8Unpacking ibverbs-providers:arm64 (39.0-1) ...
+Selecting previously unselected package thin-provisioning-tools.
+Preparing to unpack .../37-thin-provisioning-tools_0.9.0-2ubuntu1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 53%][49m[39m [##############################............................] 8Unpacking thin-provisioning-tools (0.9.0-2ubuntu1) ...
+Setting up media-types (7.0.0) ...
+7[24;0f[42m[30mProgress: [ 54%][49m[39m [###############################...........................] 8Setting up libboost-iostreams1.74.0:arm64 (1.74.0-14ubuntu3) ...
+7[24;0f[42m[30mProgress: [ 55%][49m[39m [################################..........................] 8Setting up libargon2-1:arm64 (0~20171227-0.3) ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [################################..........................] 8Setting up libsqlite3-0:arm64 (3.37.2-2ubuntu0.5) ...
+7[24;0f[42m[30mProgress: [ 57%][49m[39m [#################################.........................] 8Setting up libglusterfs0:arm64 (10.1-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 58%][49m[39m [#################################.........................] 8Setting up libdevmapper1.02.1:arm64 (2:1.02.175-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 59%][49m[39m [##################################........................] 8Setting up libnuma1:arm64 (2.0.14-3ubuntu2) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 8Setting up libmd0:arm64 (1.0.4-1build1) ...
+7[24;0f[42m[30mProgress: [ 61%][49m[39m [###################################.......................] 8Setting up dmsetup (2:1.02.175-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 62%][49m[39m [####################################......................] 8Setting up libnl-3-200:arm64 (3.5.0-0.1) ...
+7[24;0f[42m[30mProgress: [ 63%][49m[39m [####################################......................] 8Setting up libmpdec3:arm64 (2.5.1-2build2) ...
+7[24;0f[42m[30mProgress: [ 64%][49m[39m [#####################################.....................] 8Setting up libaio1:arm64 (0.3.112-13build1) ...
+7[24;0f[42m[30mProgress: [ 65%][49m[39m [#####################################.....................] 8Setting up libbsd0:arm64 (0.11.5-1) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [######################################....................] 8Setting up libjson-c5:arm64 (0.15-3~ubuntu1.22.04.2) ...
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [######################################....................] 8Setting up readline-common (8.1.2-1) ...
+7[24;0f[42m[30mProgress: [ 68%][49m[39m [#######################################...................] 8Setting up libkmod2:arm64 (29-1ubuntu1.1) ...
+7[24;0f[42m[30mProgress: [ 69%][49m[39m [########################################..................] 8Setting up libgfxdr0:arm64 (10.1-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 70%][49m[39m [########################################..................] 8Setting up libpopt0:arm64 (1.18-3build1) ...
+7[24;0f[42m[30mProgress: [ 71%][49m[39m [#########################################.................] 8Setting up libboost-thread1.74.0:arm64 (1.74.0-14ubuntu3) ...
+7[24;0f[42m[30mProgress: [ 72%][49m[39m [#########################################.................] 8Setting up libdevmapper-event1.02.1:arm64 (2:1.02.175-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 73%][49m[39m [##########################################................] 8Setting up libedit2:arm64 (3.1-20210910-1build1) ...
+7[24;0f[42m[30mProgress: [ 74%][49m[39m [##########################################................] 8Setting up libreadline8:arm64 (8.1.2-1) ...
+7[24;0f[42m[30mProgress: [ 75%][49m[39m [###########################################...............] 8Setting up libnl-route-3-200:arm64 (3.5.0-0.1) ...
+7[24;0f[42m[30mProgress: [ 76%][49m[39m [############################################..............] 8Setting up libpython3.10-stdlib:arm64 (3.10.12-1~22.04.15) ...
+7[24;0f[42m[30mProgress: [ 77%][49m[39m [############################################..............] 8Setting up thin-provisioning-tools (0.9.0-2ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 78%][49m[39m [#############################################.............] 8Setting up libdaxctl1:arm64 (72.1-1) ...
+7[24;0f[42m[30mProgress: [ 79%][49m[39m [#############################################.............] 8Setting up libndctl6:arm64 (72.1-1) ...
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8Setting up libcryptsetup12:arm64 (2:2.4.3-1ubuntu1.3) ...
+7[24;0f[42m[30mProgress: [ 81%][49m[39m [###############################################...........] 8Setting up libpmem1:arm64 (1.11.1-3build1) ...
+7[24;0f[42m[30mProgress: [ 82%][49m[39m [###############################################...........] 8Setting up libgfrpc0:arm64 (10.1-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 83%][49m[39m [################################################..........] 8Setting up rsync (3.2.7-0ubuntu0.22.04.4) ...
+7[24;0f[42m[30mProgress: [ 84%][49m[39m [################################################..........] 8invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libpython3-stdlib:arm64 (3.10.6-1~22.04.1) ...
+7[24;0f[42m[30mProgress: [ 85%][49m[39m [#################################################.........] 8Setting up libibverbs1:arm64 (39.0-1) ...
+7[24;0f[42m[30mProgress: [ 86%][49m[39m [#################################################.........] 8Setting up python3.10 (3.10.12-1~22.04.15) ...
+7[24;0f[42m[30mProgress: [ 87%][49m[39m [##################################################........] 8Setting up ibverbs-providers:arm64 (39.0-1) ...
+7[24;0f[42m[30mProgress: [ 88%][49m[39m [###################################################.......] 8Setting up python3 (3.10.6-1~22.04.1) ...
+7[24;0f[42m[30mProgress: [ 89%][49m[39m [###################################################.......] 8running python rtupdate hooks for python3.10...
+running python post-rtupdate hooks for python3.10...
+Setting up libpmemobj1:arm64 (1.11.1-3build1) ...
+7[24;0f[42m[30mProgress: [ 90%][49m[39m [####################################################......] 8Setting up libgfapi0:arm64 (10.1-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 91%][49m[39m [####################################################......] 8Setting up libpmemblk1:arm64 (1.11.1-3build1) ...
+7[24;0f[42m[30mProgress: [ 92%][49m[39m [#####################################################.....] 8Setting up librdmacm1:arm64 (39.0-1) ...
+7[24;0f[42m[30mProgress: [ 93%][49m[39m [#####################################################.....] 8Setting up librados2 (17.2.9-0ubuntu0.22.04.3) ...
+7[24;0f[42m[30mProgress: [ 94%][49m[39m [######################################################....] 8Setting up librbd1 (17.2.9-0ubuntu0.22.04.3) ...
+7[24;0f[42m[30mProgress: [ 95%][49m[39m [#######################################################...] 8Setting up fio (3.28-1) ...
+7[24;0f[42m[30mProgress: [ 96%][49m[39m [#######################################################...] 8Setting up liblvm2cmd2.03:arm64 (2.03.11-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 97%][49m[39m [########################################################..] 8Setting up dmeventd (2:1.02.175-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 98%][49m[39m [########################################################..] 8Setting up lvm2 (2.03.11-2.1ubuntu5) ...
+7[24;0f[42m[30mProgress: [ 99%][49m[39m [#########################################################.] 8invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+
+7[0;24r8[1A[J[?2004h]0;root@b28835473ec3: /root@b28835473ec3:/# [K[7mcd /week09[27mcd /week09
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mdd if=/dev/zero of=disk_a.img bs=1M count=1024[27mdd if=/dev/zero of=disk_a.img bs=1M count=1024
+[?2004l1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.804295 s, 1.3 GB/s
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mls -lh disk_a.img[27mls -lh disk_a.img
+[?2004l-rw-r--r-- 1 root root 1.0G May  8 00:59 disk_a.img
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlosetup -fP --show disk_a.img[27mlosetup -fP --show disk_a.img
+[?2004l/dev/loop0
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlsblk[27mlsblk
+[?2004lNAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0     1G  0 loop 
+nbd0    43:0    0     0B  0 disk 
+nbd1    43:32   0     0B  0 disk 
+nbd2    43:64   0     0B  0 disk 
+nbd3    43:96   0     0B  0 disk 
+nbd4    43:128  0     0B  0 disk 
+nbd5    43:160  0     0B  0 disk 
+nbd6    43:192  0     0B  0 disk 
+nbd7    43:224  0     0B  0 disk 
+vda    254:0    0 460.4G  0 disk 
+`-vda1 254:1    0 460.4G  0 part /etc/hosts
+                                 /etc/hostname
+                                 /etc/resolv.conf
+vdb    254:16   0 622.3M  1 disk 
+nbd8    43:256  0     0B  0 disk 
+nbd9    43:288  0     0B  0 disk 
+nbd10   43:320  0     0B  0 disk 
+nbd11   43:352  0     0B  0 disk 
+nbd12   43:384  0     0B  0 disk 
+nbd13   43:416  0     0B  0 disk 
+nbd14   43:448  0     0B  0 disk 
+nbd15   43:480  0     0B  0 disk 
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlosetup -a[27mlosetup -a
+[?2004l/dev/loop0: [0043]:5 (/week09/disk_a.img)
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mpvcreate /dev/loop0[27mpvcreate /dev/loop0
+[?2004l  Physical volume "/dev/loop0" successfully created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mpvs[27mpvs
+[?2004l  PV         VG Fmt  Attr PSize PFree
+  /dev/loop0    lvm2 ---  1.00g 1.00g
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mvgcreate vg_docker /dev/loop0[27mvgcreate vg_docker /dev/loop0
+[?2004l  Volume group "vg_docker" successfully created
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mvgs[27mvgs
+[?2004l  VG        #PV #LV #SN Attr   VSize    VFree   
+  vg_docker   1   0   0 wz--n- 1020.00m 1020.00m
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlvcreate -l 100%FREE -n lv_docker vg_docker[27mlvcreate -l 100%FREE -n lv_docker vg_docker
+[?2004l  /dev/vg_docker/lv_docker: not found: device not cleared
+  Aborting. Failed to wipe start of new LV.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvs[27mlvs
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlvcreate -l 100%FREE -n lv_docker vg_docker --yes[27mlvcreate -l 100%FREE -n lv_docker vg_docker --yes
+[?2004l  /dev/vg_docker/lv_docker: not found: device not cleared
+  Aborting. Failed to wipe start of new LV.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvcreate -l 100%FREE -n lv_docker vg_docker -Wy --zer[27m[7mo[27m[7mo n[27m[At@b28835473ec3:/week09# lvcreate -l 100%FREE -n lv_docker vg_docker -Wy --zero n
+[?2004l  /dev/vg_docker/lv_docker: not found: device not cleared
+  Aborting. Failed to wipe start of new LV.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvcreate -l 100%FREE -n lv_docker vg_docker --config [27m[7m'[27m[7m'activation{udev_sync=0 udev_rules=0}'[27m[Alvcreate -l 100%FREE -n lv_docker vg_docker --config 'activation{udev_sync=0 udev_rules=0}'
+[?2004l  Logical volume "lv_docker" created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvs[27mlvs
+[?2004l  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-a----- 1020.00m                                                    
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmkfs.ext4 /dev/vg_docker/lv_docker[27mmkfs.ext4 /dev/vg_docker/lv_docker
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:      0/261120             done                            
+Creating filesystem with 261120 4k blocks and 65280 inodes
+Filesystem UUID: c9c0fea5-31b6-4418-b4b5-4895f33de364
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376
+
+Allocating group tables: 0/8   done                            
+Writing inode tables: 0/8   done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: 0/8   done
+
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mmkdir -p /mnt/docker_new[27mmkdir -p /mnt/docker_new
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmount /dev/vg_docker/lv_docker /mnt/docker_new[27mmount /dev/vg_docker/lv_docker /mnt/docker_new
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mmount | grep docker_new[27mmount | grep docker_new
+[?2004l/dev/mapper/vg_docker-lv_docker on /mnt/[01;31m[Kdocker_new[m[K type ext4 (rw,relatime)
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mdd if=/dev/zero of=disk_b.img bs=1M count=2072[27mdd if=/dev/zero of=disk_b.img bs=1M count=2072
+[?2004l2072+0 records in
+2072+0 records out
+2172649472 bytes (2.2 GB, 2.0 GiB) copied, 2.06304 s, 1.1 GB/s
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlosetup -fP --show disk_b.img[27mlosetup -fP --show disk_b.img
+[?2004l/dev/loop1
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mls /dev/loop1[27m
+[Aroot@b28835473ec3:/week09# ls /dev/loop1
+[A
+[?2004l[0m[40;33;01m/dev/loop1[0m
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mpvcreate /dev/loop1[27mpvcreate /dev/loop1
+[?2004l  Physical volume "/dev/loop1" successfully created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mvgcreate vg_mysql /dev/loop1[27mvgcreate vg_mysql /dev/loop1
+[?2004l  Volume group "vg_mysql" successfully created
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlvcreate -L 1G -n lv_mysql vg_mysql --config 'activat[27m[7mi[27m[7mion{udev_sync=0 udev_rules=0}'[27m[Alvcreate -L 1G -n lv_mysql vg_mysql --config 'activation{udev_sync=0 udev_rules=0}'
+[?2004l  Logical volume "lv_mysql" created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvs[27mlvs
+[?2004l  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-ao---- 1020.00m                                                    
+  lv_mysql  vg_mysql  -wi-a-----    1.00g                                                    
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmkfs.ext4 /dev/vg_mysql/lv_mysql[27mmkfs.ext4 /dev/vg_mysql/lv_mysql
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:      0/262144             done                            
+Creating filesystem with 262144 4k blocks and 65536 inodes
+Filesystem UUID: a40499c4-fdcc-4559-a357-3fb7ffd077bd
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376
+
+Allocating group tables: 0/8   done                            
+Writing inode tables: 0/8   done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information: 0/8   done
+
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mmkdir -p /mnt/mysql_data[27m
+[Aroot@b28835473ec3:/week09# mkdir -p /mnt/mysql_data
+[A
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mblkid /dev/vg_mysql/lv_mysql[27mblkid /dev/vg_mysql/lv_mysql
+[?2004l/dev/vg_mysql/lv_mysql: UUID="a40499c4-fdcc-4559-a357-3fb7ffd077bd" BLOCK_SIZE="4096" TYPE="ext4"
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mecho 'UUID=a40499c4-fdcc-4559-a357-3fb7ffd077bd /mnt/[27m[7mm[27m[7mmysql_data ext4 defaults,noatime 0 2' >> /etc/fstab[27m[Aecho 'UUID=a40499c4-fdcc-4559-a357-3fb7ffd077bd /mnt/mysql_data ext4 defaults,noatime 0 2' >> /etc/fstab
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mcat /etc/fstab[27mcat /etc/fstab
+[?2004l# UNCONFIGURED FSTAB FOR BASE SYSTEM
+UUID=a40499c4-fdcc-4559-a357-3fb7ffd077bd /mnt/mysql_data ext4 defaults,noatime 0 2
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmount -a[27mmount -a
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mdf -hT /mnt/mysql_data[27mdf -hT /mnt/mysql_data
+[?2004lFilesystem                    Type  Size  Used Avail Use% Mounted on
+/dev/mapper/vg_mysql-lv_mysql ext4  974M   24K  907M   1% /mnt/mysql_data
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlvextend -L +500M /dev/vg_mysql/lv_mysql[27mlvextend -L +500M /dev/vg_mysql/lv_mysql
+[?2004l  Size of logical volume vg_mysql/lv_mysql changed from 1.00 GiB (256 extents) to <1.49 GiB (381 extents).
+  Logical volume vg_mysql/lv_mysql successfully resized.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mresize2fs /dev/vg_mysql/lv_mysql[27mresize2fs /dev/vg_mysql/lv_mysql
+[?2004lresize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/vg_mysql/lv_mysql is mounted on /mnt/mysql_data; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 1
+The filesystem on /dev/vg_mysql/lv_mysql is now 390144 (4k) blocks long.
+
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mdf -hT /mnt/mysql_data[27mdf -hT /mnt/mysql_data
+[?2004lFilesystem                    Type  Size  Used Avail Use% Mounted on
+/dev/mapper/vg_mysql-lv_mysql ext4  1.5G   24K  1.4G   1% /mnt/mysql_data
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mfio --name=seq --rw=read --bs=1M --size=256M \[27m
+[7m--filename=/mnt/docker_new/fio_test --direct=1 --runtime=10[27m[Afio --name=seq --rw=read --bs=1M --size=256M \
+--filename=/mnt/docker_new/fio_test --direct=1 --runtime=10
+[?2004lseq: (g=0): rw=read, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+fio-3.28
+Starting 1 process
+seq: Laying out IO file (1 file / 256MiB)
+
+seq: (groupid=0, jobs=1): err= 0: pid=862: Fri May  8 01:08:27 2026
+  read: IOPS=9142, BW=9143MiB/s (9587MB/s)(256MiB/28msec)
+    clat (usec): min=89, max=788, avg=108.02, stdev=46.13
+     lat (usec): min=89, max=789, avg=108.12, stdev=46.16
+    clat percentiles (usec):
+     |  1.00th=[   91],  5.00th=[   92], 10.00th=[   92], 20.00th=[   95],
+     | 30.00th=[   96], 40.00th=[   98], 50.00th=[  102], 60.00th=[  103],
+     | 70.00th=[  109], 80.00th=[  115], 90.00th=[  122], 95.00th=[  131],
+     | 99.00th=[  221], 99.50th=[  231], 99.90th=[  791], 99.95th=[  791],
+     | 99.99th=[  791]
+  lat (usec)   : 100=46.09%, 250=53.52%, 1000=0.39%
+  cpu          : usr=0.00%, sys=22.22%, ctx=256, majf=0, minf=280
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=256,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=9143MiB/s (9587MB/s), 9143MiB/s-9143MiB/s (9587MB/s-9587MB/s), io=256MiB (268MB), run=28-28msec
+
+Disk stats (read/write):
+    dm-0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=512/0, aggrmerge=0/0, aggrticks=36/0, aggrin_queue=36, aggrutil=13.07%
+  loop0: ios=512/0, merge=0/0, ticks=36/0, in_queue=36, util=13.07%
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mfio --name=rand --rw=randread --bs=4k --size=256M \[27m
+[7m--filename=/mnt/mysql_data/fio_test --direct=1 --runtime=10[27m[Afio --name=rand --rw=randread --bs=4k --size=256M \
+--filename=/mnt/mysql_data/fio_test --direct=1 --runtime=10
+[?2004lrand: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+fio-3.28
+Starting 1 process
+rand: Laying out IO file (1 file / 256MiB)
+Jobs: 1 (f=1)Jobs: 1 (f=1): [r(1)][-.-%][r=110MiB/s][r=28.2k IOPS][eta 00m:00s]
+rand: (groupid=0, jobs=1): err= 0: pid=865: Fri May  8 01:08:49 2026
+  read: IOPS=28.1k, BW=110MiB/s (115MB/s)(256MiB/2335msec)
+    clat (usec): min=18, max=120, avg=34.81, stdev= 2.63
+     lat (usec): min=18, max=120, avg=34.89, stdev= 2.64
+    clat percentiles (nsec):
+     |  1.00th=[28288],  5.00th=[30592], 10.00th=[33024], 20.00th=[33536],
+     | 30.00th=[34048], 40.00th=[34560], 50.00th=[35072], 60.00th=[35072],
+     | 70.00th=[35584], 80.00th=[35584], 90.00th=[36608], 95.00th=[38144],
+     | 99.00th=[44800], 99.50th=[46848], 99.90th=[51456], 99.95th=[54528],
+     | 99.99th=[79360]
+   bw (  KiB/s): min=110135, max=113362, per=100.00%, avg=112325.50, stdev=1476.82, samples=4
+   iops        : min=27533, max=28340, avg=28080.75, stdev=369.30, samples=4
+  lat (usec)   : 20=0.01%, 50=99.84%, 100=0.14%, 250=0.01%
+  cpu          : usr=10.24%, sys=18.89%, ctx=65535, majf=0, minf=22
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=65536,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=110MiB/s (115MB/s), 110MiB/s-110MiB/s (115MB/s-115MB/s), io=256MiB (268MB), run=2335-2335msec
+
+Disk stats (read/write):
+    dm-1: ios=65407/0, merge=0/0, ticks=1180/0, in_queue=1180, util=48.54%, aggrios=65536/0, aggrmerge=0/0, aggrticks=1385/0, aggrin_queue=1384, aggrutil=54.83%
+  loop1: ios=65536/0, merge=0/0, ticks=1385/0, in_queue=1384, util=54.83%
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mdd if=/dev/zero of=disk_c.img bs=1M count=2048[27mdd if=/dev/zero of=disk_c.img bs=1M count=2048
+[?2004l2048+0 records in
+2048+0 records out
+2147483648 bytes (2.1 GB, 2.0 GiB) copied, 2.07151 s, 1.0 GB/s
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlosetup -fP --show disk_c.img[27mlosetup -fP --show disk_c.img
+[?2004l/dev/loop2
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlosetup -a[27m
+[Aroot@b28835473ec3:/week09# losetup -a
+[A
+[?2004l/dev/loop1: [0043]:6 (/week09/disk_b.img)
+/dev/loop2: [0043]:7 (/week09/disk_c.img)
+/dev/loop0: [0043]:5 (/week09/disk_a.img)
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlsblk | grep loop[27m
+[Aroot@b28835473ec3:/week09# lsblk | grep loop
+[A
+[?2004l[01;31m[Kloop[m[K0                   7:0    0     1G  0 [01;31m[Kloop[m[K 
+[01;31m[Kloop[m[K1                   7:1    0     2G  0 [01;31m[Kloop[m[K 
+[01;31m[Kloop[m[K2                   7:2    0     2G  0 [01;31m[Kloop[m[K 
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mpvcreate /dev/loop2[27mpvcreate /dev/loop2
+[?2004l  Physical volume "/dev/loop2" successfully created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mvgcreate vg_home /dev/loop2[27mvgcreate vg_home /dev/loop2
+[?2004l  Volume group "vg_home" successfully created
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mlvcreate -l 100%FREE -n lv_home vg_home --config 'act[27m[7mi[27m[7mivation{udev_sync=0 udev_rules=0}'[27m[Alvcreate -l 100%FREE -n lv_home vg_home --config 'activation{udev_sync=0 udev_rules=0}'
+[?2004l  Logical volume "lv_home" created.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mlvs[27mlvs
+[?2004l  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-ao---- 1020.00m                                                    
+  lv_home   vg_home   -wi-a-----   <2.00g                                                    
+  lv_mysql  vg_mysql  -wi-ao----   <1.49g                                                    
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmkfs.ext4 /dev/vg_home/lv_home[27mmkfs.ext4 /dev/vg_home/lv_home
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:      0/523264             done                            
+Creating filesystem with 523264 4k blocks and 130816 inodes
+Filesystem UUID: 8579b2fa-b4b5-4622-a42a-73cf9604662a
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912
+
+Allocating group tables:  0/16     done                            
+Writing inode tables:  0/16     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/16     done
+
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmkdir -p /mnt/home_quota[27mmkdir -p /mnt/home_quota
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mblkid /dev/vg_home/lv_home[27mblkid /dev/vg_home/lv_home
+[?2004l/dev/vg_home/lv_home: UUID="8579b2fa-b4b5-4622-a42a-73cf9604662a" BLOCK_SIZE="4096" TYPE="ext4"
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mecho 'UUID=8579b2fa-b4b5-4622-a42a-73cf9604662a /mnt/[27m[7mh[27m[7mhome_quota ext4 defaults,usrquota,grpquota 0 2' >> /etc/fstab[27m[Aecho 'UUID=8579b2fa-b4b5-4622-a42a-73cf9604662a /mnt/home_quota ext4 defaults,usrquota,grpquota 0 2' >> /etc/fstab
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mmount -a[27mmount -a
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmount | grep home_quota[27mmount | grep home_quota
+[?2004l/dev/mapper/vg_home-lv_home on /mnt/[01;31m[Khome_quota[m[K type ext4 (rw,relatime,quota,usrquota,grpquota)
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mapt install -y quota quotatool[27mapt install -y quota quotatool
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 36%Reading package lists... 46%Reading package lists... 46%Reading package lists... 65%Reading package lists... 65%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 78%Reading package lists... 78%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  dbus libapparmor1 libdbus-1-3 libldap-2.5-0 libldap-common libnl-genl-3-200
+  libsasl2-2 libsasl2-modules libsasl2-modules-db libwrap0
+Suggested packages:
+  default-dbus-session-bus | dbus-session-bus libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql libnet-ldap-perl rpcbind default-mta
+  | mail-transport-agent
+The following NEW packages will be installed:
+  dbus libapparmor1 libdbus-1-3 libldap-2.5-0 libldap-common libnl-genl-3-200
+  libsasl2-2 libsasl2-modules libsasl2-modules-db libwrap0 quota quotatool
+0 upgraded, 12 newly installed, 0 to remove and 2 not upgraded.
+Need to get 1017 kB of archives.
+After this operation, 3824 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connecting to ports.ubuntu.com (91.189.92.21)][0m[33m                                                  0% [Waiting for headers][0m                        Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdbus-1-3 arm64 1.12.20-2ubuntu4.1 [187 kB]
+[33m1% [1 libdbus-1-3 11.8 kB/187 kB 6%][0m[33m4% [1 libdbus-1-3 55.3 kB/187 kB 30%][0m[33m                                     16% [Working][0m[33m16% [Waiting for headers][0m                         Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-modules-db arm64 2.1.27+dfsg2-3ubuntu1.2 [21.1 kB]
+[33m17% [2 libsasl2-modules-db 11.8 kB/21.1 kB 56%][0m[33m                                               20% [Working][0m             Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-2 arm64 2.1.27+dfsg2-3ubuntu1.2 [55.6 kB]
+[33m21% [3 libsasl2-2 10.6 kB/55.6 kB 19%][0m[33m                                      26% [Working][0m             Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-2.5-0 arm64 2.5.20+dfsg-0ubuntu0.22.04.1 [182 kB]
+[33m26% [4 libldap-2.5-0 2124 B/182 kB 1%][0m[33m                                      42% [Working][0m             Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libnl-genl-3-200 arm64 3.5.0-0.1 [12.1 kB]
+[33m43% [5 libnl-genl-3-200 12.1 kB/12.1 kB 100%][0m[33m                                             44% [Working][0m             Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libwrap0 arm64 7.6.q-31build2 [47.9 kB]
+[33m47% [6 libwrap0 32.8 kB/47.9 kB 68%][0m[33m                                    50% [Working][0m             Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 quota arm64 4.06-1build2 [217 kB]
+[33m50% [7 quota 7730 B/217 kB 4%][0m[33m                              68% [Working][0m             Get:8 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libapparmor1 arm64 3.0.4-2ubuntu2.5 [39.5 kB]
+[33m69% [8 libapparmor1 4542 B/39.5 kB 12%][0m[33m                                       73% [Working][0m             Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dbus arm64 1.12.20-2ubuntu4.1 [154 kB]
+[33m74% [9 dbus 13.2 kB/154 kB 9%][0m[33m                              87% [Working][0m             Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libldap-common all 2.5.20+dfsg-0ubuntu0.22.04.1 [16.4 kB]
+[33m88% [10 libldap-common 6958 B/16.4 kB 42%]                          149 kB/s 0s[0m[33m90% [Working]                                                       149 kB/s 0s[0m                                                                               Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsasl2-modules arm64 2.1.27+dfsg2-3ubuntu1.2 [68.4 kB]
+[33m92% [11 libsasl2-modules 20.5 kB/68.4 kB 30%]                       149 kB/s 0s[0m[33m97% [Working]                                                       149 kB/s 0s[0m                                                                               Get:12 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 quotatool arm64 1:1.6.2-5fakesync1 [17.1 kB]
+[33m97% [12 quotatool 4542 B/17.1 kB 27%]                               149 kB/s 0s[0m[33m100% [Working]                                                      149 kB/s 0s[0m                                                                               Fetched 1017 kB in 7s (150 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;23r8[1ASelecting previously unselected package libdbus-1-3:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5820 files and directories currently installed.)
+Preparing to unpack .../00-libdbus-1-3_1.12.20-2ubuntu4.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [  2%][49m[39m [#.........................................................] 8Unpacking libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+7[24;0f[42m[30mProgress: [  4%][49m[39m [##........................................................] 8Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../01-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [  6%][49m[39m [###.......................................................] 8Unpacking libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [  8%][49m[39m [####......................................................] 8Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../02-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 10%][49m[39m [#####.....................................................] 8Unpacking libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 8Selecting previously unselected package libldap-2.5-0:arm64.
+Preparing to unpack .../03-libldap-2.5-0_2.5.20+dfsg-0ubuntu0.22.04.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 14%][49m[39m [########..................................................] 8Unpacking libldap-2.5-0:arm64 (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+7[24;0f[42m[30mProgress: [ 16%][49m[39m [#########.................................................] 8Selecting previously unselected package libnl-genl-3-200:arm64.
+Preparing to unpack .../04-libnl-genl-3-200_3.5.0-0.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 18%][49m[39m [##########................................................] 8Unpacking libnl-genl-3-200:arm64 (3.5.0-0.1) ...
+7[24;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Selecting previously unselected package libwrap0:arm64.
+Preparing to unpack .../05-libwrap0_7.6.q-31build2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [#############.............................................] 8Unpacking libwrap0:arm64 (7.6.q-31build2) ...
+7[24;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Selecting previously unselected package quota.
+Preparing to unpack .../06-quota_4.06-1build2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 27%][49m[39m [###############...........................................] 8Unpacking quota (4.06-1build2) ...
+7[24;0f[42m[30mProgress: [ 29%][49m[39m [################..........................................] 8Selecting previously unselected package libapparmor1:arm64.
+Preparing to unpack .../07-libapparmor1_3.0.4-2ubuntu2.5_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 31%][49m[39m [#################.........................................] 8Unpacking libapparmor1:arm64 (3.0.4-2ubuntu2.5) ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [##################........................................] 8Selecting previously unselected package dbus.
+Preparing to unpack .../08-dbus_1.12.20-2ubuntu4.1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 35%][49m[39m [####################......................................] 8Unpacking dbus (1.12.20-2ubuntu4.1) ...
+7[24;0f[42m[30mProgress: [ 37%][49m[39m [#####################.....................................] 8Selecting previously unselected package libldap-common.
+Preparing to unpack .../09-libldap-common_2.5.20+dfsg-0ubuntu0.22.04.1_all.deb ...
+7[24;0f[42m[30mProgress: [ 39%][49m[39m [######################....................................] 8Unpacking libldap-common (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+7[24;0f[42m[30mProgress: [ 41%][49m[39m [#######################...................................] 8Selecting previously unselected package libsasl2-modules:arm64.
+Preparing to unpack .../10-libsasl2-modules_2.1.27+dfsg2-3ubuntu1.2_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 43%][49m[39m [########################..................................] 8Unpacking libsasl2-modules:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 45%][49m[39m [##########################................................] 8Selecting previously unselected package quotatool.
+Preparing to unpack .../11-quotatool_1%3a1.6.2-5fakesync1_arm64.deb ...
+7[24;0f[42m[30mProgress: [ 47%][49m[39m [###########################...............................] 8Unpacking quotatool (1:1.6.2-5fakesync1) ...
+7[24;0f[42m[30mProgress: [ 49%][49m[39m [############################..............................] 8Setting up libapparmor1:arm64 (3.0.4-2ubuntu2.5) ...
+7[24;0f[42m[30mProgress: [ 51%][49m[39m [#############################.............................] 87[24;0f[42m[30mProgress: [ 53%][49m[39m [##############################............................] 8Setting up libsasl2-modules:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 55%][49m[39m [###############################...........................] 87[24;0f[42m[30mProgress: [ 57%][49m[39m [#################################.........................] 8Setting up libldap-common (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+7[24;0f[42m[30mProgress: [ 59%][49m[39m [##################################........................] 87[24;0f[42m[30mProgress: [ 61%][49m[39m [###################################.......................] 8Setting up libsasl2-modules-db:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 63%][49m[39m [####################################......................] 87[24;0f[42m[30mProgress: [ 65%][49m[39m [#####################################.....................] 8Setting up libwrap0:arm64 (7.6.q-31build2) ...
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [#######################################...................] 87[24;0f[42m[30mProgress: [ 69%][49m[39m [########################################..................] 8Setting up libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+7[24;0f[42m[30mProgress: [ 71%][49m[39m [#########################################.................] 87[24;0f[42m[30mProgress: [ 73%][49m[39m [##########################################................] 8Setting up dbus (1.12.20-2ubuntu4.1) ...
+7[24;0f[42m[30mProgress: [ 76%][49m[39m [###########################################...............] 87[24;0f[42m[30mProgress: [ 78%][49m[39m [############################################..............] 8Setting up quotatool (1:1.6.2-5fakesync1) ...
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 87[24;0f[42m[30mProgress: [ 82%][49m[39m [###############################################...........] 8Setting up libsasl2-2:arm64 (2.1.27+dfsg2-3ubuntu1.2) ...
+7[24;0f[42m[30mProgress: [ 84%][49m[39m [################################################..........] 87[24;0f[42m[30mProgress: [ 86%][49m[39m [#################################################.........] 8Setting up libnl-genl-3-200:arm64 (3.5.0-0.1) ...
+7[24;0f[42m[30mProgress: [ 88%][49m[39m [##################################################........] 87[24;0f[42m[30mProgress: [ 90%][49m[39m [####################################################......] 8Setting up libldap-2.5-0:arm64 (2.5.20+dfsg-0ubuntu0.22.04.1) ...
+7[24;0f[42m[30mProgress: [ 92%][49m[39m [#####################################################.....] 87[24;0f[42m[30mProgress: [ 94%][49m[39m [######################################################....] 8Setting up quota (4.06-1build2) ...
+7[24;0f[42m[30mProgress: [ 96%][49m[39m [#######################################################...] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/aarch64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+7[24;0f[42m[30mProgress: [ 98%][49m[39m [########################################################..] 8Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+
+7[0;24r8[1A[J[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mquotacheck -cugvm /mnt/home_quota[27mquotacheck -cugvm /mnt/home_quota
+[?2004lquotacheck: Your kernel probably supports ext4 quota feature but you are using external quota files. Please switch your filesystem to use ext4 quota feature as external quota files on ext4 are deprecated.
+quotacheck: Scanning /dev/mapper/vg_home-lv_home [/mnt/home_quota] done
+quotacheck: Cannot stat old user quota file /mnt/home_quota/aquota.user: No such file or directory. Usage will not be subtracted.
+quotacheck: Cannot stat old group quota file /mnt/home_quota/aquota.group: No such file or directory. Usage will not be subtracted.
+quotacheck: Cannot stat old user quota file /mnt/home_quota/aquota.user: No such file or directory. Usage will not be subtracted.
+quotacheck: Cannot stat old group quota file /mnt/home_quota/aquota.group: No such file or directory. Usage will not be subtracted.
+quotacheck: Checked 3 directories and 0 files
+quotacheck: Old file not found.
+quotacheck: Old file not found.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mquotaon -v /mnt/home_quota[27mquotaon -v /mnt/home_quota
+[?2004lquotaon: Your kernel probably supports ext4 quota feature but you are using external quota files. Please switch your filesystem to use ext4 quota feature as external quota files on ext4 are deprecated.
+quotaon: using /mnt/home_quota/aquota.group on /dev/mapper/vg_home-lv_home [/mnt/home_quota]: No such process
+quotaon: Quota format not supported in kernel.
+quotaon: using /mnt/home_quota/aquota.user on /dev/mapper/vg_home-lv_home [/mnt/home_quota]: No such process
+quotaon: Quota format not supported in kernel.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7msed -i 's/defaults,usrquota,grpquota/defaults,usrjquo[27m[7mt[27m[7mta=aquota.user,grpjquota=aquota.group,jqfmt=vfsv0/' /etc/fstab[27m[Ased -i 's/defaults,usrquota,grpquota/defaults,usrjquota=aquota.user,grpjquota=aquota.group,jqfmt=vfsv0/' /etc/fstab
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mumount /mnt/home_quota[27mumount /mnt/home_quota
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmount -a[27mmount -a
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mmount | grep home_quota[27mmount | grep home_quota
+[?2004l/dev/mapper/vg_home-lv_home on /mnt/[01;31m[Khome_quota[m[K type ext4 (rw,relatime,jqfmt=vfsv0,usrjquota=aquota.user,grpjquota=aquota.group)
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mquotacheck -cugvm /mnt/home_quota[27mquotacheck -cugvm /mnt/home_quota
+[?2004lquotacheck: Your kernel probably supports ext4 quota feature but you are using external quota files. Please switch your filesystem to use ext4 quota feature as external quota files on ext4 are deprecated.
+quotacheck: Scanning /dev/mapper/vg_home-lv_home [/mnt/home_quota] done
+quotacheck: Checked 3 directories and 2 files
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mquotaon -v /mnt/home_quota[27mquotaon -v /mnt/home_quota
+[?2004lquotaon: Your kernel probably supports ext4 quota feature but you are using external quota files. Please switch your filesystem to use ext4 quota feature as external quota files on ext4 are deprecated.
+quotaon: using /mnt/home_quota/aquota.group on /dev/mapper/vg_home-lv_home [/mnt/home_quota]: No such process
+quotaon: Quota format not supported in kernel.
+quotaon: using /mnt/home_quota/aquota.user on /dev/mapper/vg_home-lv_home [/mnt/home_quota]: No such process
+quotaon: Quota format not supported in kernel.
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7museradd -d /mnt/home_quota/student1 -m student1[27museradd -d /mnt/home_quota/student1 -m student1
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7msetquota -u student1 100M 120M 0 0 /mnt/home_quota[27msetquota -u student1 100M 120M 0 0 /mnt/home_quota
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mquota -u student1[27m
+[Aroot@b28835473ec3:/week09# quota -u student1
+[A
+[?2004lDisk quotas for user student1 (uid 1000): no limited resources used
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mrepquota /mnt/home_quota[27mrepquota /mnt/home_quota
+[?2004l*** Report for user quotas on device /dev/mapper/vg_home-lv_home
+Block grace time: 7days; Inode grace time: 7days
+                        Block limits                File limits
+User            used    soft    hard  grace    used  soft  hard  grace
+----------------------------------------------------------------------
+root      --      20       0       0              2     0     0       
+
+
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7msu -s /bin/bash student1 -c "dd if=/dev/zero of=/mnt/[27m[7mh[27m[7mhome_quota/student1/test1 bs=1M count=150"[27m[Asu -s /bin/bash student1 -c "dd if=/dev/zero of=/mnt/home_quota/student1/test1 bs=1M count=150"
+[?2004l150+0 records in
+150+0 records out
+157286400 bytes (157 MB, 150 MiB) copied, 0.101136 s, 1.6 GB/s
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [Kcat > /week09/setup_disks.sh << 'EOF'
+#!/bin/bash
+
+# 1. loop \353\224\224\353\260\224\354\235\2
+64\354\212\244 \354\236\254\354\227\260\
+352\262\260
+if ! losetup -a | grep -q disk_a.img; then
+    sudo losetup -fP disk_a.img
+fi
+if ! losetup -a | grep -q disk_b.img; then
+    sudo losetup -fP disk_b.img
+fi
+if ! losetup -a | grep -q disk_c.img; then
+    sudo losetup -fP disk_c.img
+fi
+
+# 2. LVM \355\231\234\354\204\261\355\231\22
+4
+sudo vgchange -ay
+
+# 3. fstab \353\247\210\354\232\264\355\212\
+270
+[7msudo mount -a[27m
+
+[7m# 4. Docker \354\213\234\354\236\221[27m[7msudo service docker start[27m[7m# 5. \354\273\250\355\205\214\354\235\264\35[27m[7m3\204\210 \354\213\234\354\236\221[27m[7mdocker start mysql_lab[27m[7m# \354\203\201\355\203\234 \355\231\225\[27m[7m354\235\270[27m[7mecho "=== \353\224\224\354\212\244\355\201\2[27m[7m54 \354\203\201\355\203\234 ==="[27m[7mlosetup -a[27m[7msudo lvs[27m[7mdf -hT | grep -E "vg_|loop"[27m[7mecho "=== \354\273\250\355\205\214\354\235\2[27m[7m64\353\204\210 \354\203\201\355\203\234 ==="[27m[7mdocker ps[27m[7mEOF[27m[7mchmod +x /week09/setup_disks.sh[27m[7mcat /week09/setup_disks.sh[27m[A[Asudo mount -a
+
+# 4. Docker \354\213\234\354\236\221sudo service docker start# 5. \354\273\250\355\205\214\354\235\264\353\204\210 \354\213\234\354\236\221docker start mysql_lab# \354\203\201\355\203\234 \355\231\225\354\235\270echo "=== \353\224\224\354\212\244\355\201\254 \354\203\201\355\203\234 ==="losetup -asudo lvsdf -hT | grep -E "vg_|loop"echo "=== \354\273\250\355\205\214\354\235\264\353\204\210 \354\203\201\355\203\234 ==="docker psEOFchmod +x /week09/setup_disks.shcat /week09/setup_disks.sh
+[?2004l#!/bin/bash
+
+# 1. loop 디바이스 재연결
+if ! losetup -a | grep -q disk_a.img; then
+    sudo losetup -fP disk_a.img
+fi
+if ! losetup -a | grep -q disk_b.img; then
+    sudo losetup -fP disk_b.img
+fi
+if ! losetup -a | grep -q disk_c.img; then
+    sudo losetup -fP disk_c.img
+fi
+
+# 2. LVM 활성화
+sudo vgchange -ay
+
+# 3. fstab 마운트
+sudo mount -a
+
+# 4. Docker 시작
+sudo service docker start
+
+# 5. 컨테이너 시작
+docker start mysql_lab
+
+# 상태 확인
+echo "=== 디스크 상태 ==="
+losetup -a
+sudo lvs
+df -hT | grep -E "vg_|loop"
+echo "=== 컨테이너 상태 ==="
+docker ps
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mbash /week09/setup_disks.sh[27mbash /week09/setup_disks.sh
+[?2004l/week09/setup_disks.sh: line 15: sudo: command not found
+/week09/setup_disks.sh: line 18: sudo: command not found
+/week09/setup_disks.sh: line 21: sudo: command not found
+/week09/setup_disks.sh: line 24: docker: command not found
+=== 디스크 상태 ===
+/dev/loop1: [0043]:6 (/week09/disk_b.img)
+/dev/loop2: [0043]:7 (/week09/disk_c.img)
+/dev/loop0: [0043]:5 (/week09/disk_a.img)
+/week09/setup_disks.sh: line 29: sudo: command not found
+/dev/mapper/vg_docker-lv_docker ext4       986M  257M  663M  28% /mnt/docker_new
+/dev/mapper/vg_mysql-lv_mysql   ext4       1.5G  257M  1.1G  19% /mnt/mysql_data
+/dev/mapper/vg_home-lv_home     ext4       2.0G  151M  1.7G   9% /mnt/home_quota
+=== 컨테이너 상태 ===
+/week09/setup_disks.sh: line 32: docker: command not found
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7msed -i 's/sudo //g' /week09/setup_disks.sh[27msed -i 's/sudo //g' /week09/setup_disks.sh
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7msed -i '/docker/d' /week09/setup_disks.sh[27msed -i '/docker/d' /week09/setup_disks.sh
+[?2004l[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [K[7mbash /week09/setup_disks.sh[27mbash /week09/setup_disks.sh
+[?2004l  1 logical volume(s) in volume group "vg_home" now active
+  1 logical volume(s) in volume group "vg_mysql" now active
+  1 logical volume(s) in volume group "vg_docker" now active
+=== 디스크 상태 ===
+/dev/loop1: [0043]:6 (/week09/disk_b.img)
+/dev/loop2: [0043]:7 (/week09/disk_c.img)
+/dev/loop0: [0043]:5 (/week09/disk_a.img)
+  LV        VG        Attr       LSize    Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_docker vg_docker -wi-ao---- 1020.00m                                                    
+  lv_home   vg_home   -wi-ao----   <2.00g                                                    
+  lv_mysql  vg_mysql  -wi-ao----   <1.49g                                                    
+/dev/mapper/vg_docker-lv_docker ext4       986M  257M  663M  28% /mnt/docker_new
+/dev/mapper/vg_mysql-lv_mysql   ext4       1.5G  257M  1.1G  19% /mnt/mysql_data
+/dev/mapper/vg_home-lv_home     ext4       2.0G  151M  1.7G   9% /mnt/home_quota
+=== 컨테이너 상태 ===
+[?2004h]0;root@b28835473ec3: /week09root@b28835473ec3:/week09# [7mexit[27mexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week09[0m[27m[24m[Jmac@macui-MacBookPro-2 week09 % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri May  8 10:17:52 2026
