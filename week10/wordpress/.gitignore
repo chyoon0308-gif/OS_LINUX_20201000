@@ -1,0 +1,18 @@
+# 민감 정보 제외
+.env
+
+# MySQL 데이터 제외
+mysql_data/
+
+# 로그 제외
+logs/
+*.log
+
+# macOS 불필요 파일
+.DS_Store
+
+# Python cache
+__pycache__/
+
+# 대용량 이미지 파일 제외
+*.img
