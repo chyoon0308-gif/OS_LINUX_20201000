@@ -1,0 +1,25 @@
+# 11주차 ab 부하 테스트 결과 요약
+
+## 테스트 대상
+
+http://localhost:8080/
+
+## 테스트 명령어
+
+ab -n 2000 -c 50 http://localhost:8080/
+
+## 주요 결과
+
+- Complete requests: 2000
+- Failed requests: 0
+- Requests per second: 206.47 [#/sec]
+- Time per request: 242.161 ms
+- Time per request across all concurrent requests: 4.843 ms
+- Transfer rate: 13279.08 Kbytes/sec
+
+## 해석
+
+동시 요청 50개로 총 2000번의 요청을 보냈고, 실패 요청은 0개였다.
+Nginx와 WordPress PHP-FPM, MySQL 컨테이너는 부하 테스트 이후에도 모두 정상 실행 상태를 유지했다.
+
+Nginx access.log에서 ApacheBench/2.3 User-Agent로 GET / HTTP/1.0 요청이 다수 기록되었으며, 응답 코드는 200 OK였다.
