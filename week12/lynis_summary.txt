@@ -1,0 +1,30 @@
+# 12주차 Lynis 보안 감사 결과 요약
+
+## 실행 명령어
+
+sudo lynis audit system --quick
+
+## 주요 결과
+
+- Lynis version: 3.1.6
+- Warnings: 1
+- Suggestions: 19
+- Hardening index: 63
+
+## 주요 Warning
+
+- NETW-2705: Couldn't find 2 responsive nameservers
+
+## 주요 Suggestions
+
+- Docker daemon 관련 warning 확인 권고
+- 파일 권한 제한 권고
+- 방화벽/패킷 필터 설정 권고
+- 취약 패키지 확인 도구 설치 권고
+- 악성코드 스캐너 설치 권고
+
+## 해석
+
+Lynis 감사 결과 시스템 보안 강화 지수는 63으로 확인되었다.
+실습 환경은 macOS Docker Desktop 기반이므로 Linux 서버와 일부 점검 항목이 다르게 나타날 수 있다.
+1개의 Warning과 19개의 Suggestion이 확인되었으며, 이는 시스템 보안 강화를 위해 추가 점검이 필요한 항목으로 볼 수 있다.

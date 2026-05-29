@@ -1,0 +1,46 @@
+# 12주차 Trivy 컨테이너 이미지 취약점 스캔 요약
+
+## 실행 도구
+
+- Trivy version: 0.70.0
+
+## 스캔 대상 이미지
+
+- nginx:alpine
+- wordpress:php8.2-fpm
+- mysql:8.0
+
+## nginx:alpine 스캔 결과
+
+- Total: 42
+- UNKNOWN: 0
+- LOW: 4
+- MEDIUM: 24
+- HIGH: 12
+- CRITICAL: 2
+
+## wordpress:php8.2-fpm 스캔 결과
+
+- Total: 1387
+- UNKNOWN: 138
+- LOW: 713
+- MEDIUM: 422
+- HIGH: 101
+- CRITICAL: 13
+
+## mysql:8.0 스캔 결과
+
+Trivy 출력에서 여러 대상별 결과가 확인되었으며, 주요 스캔 대상 기준 결과는 다음과 같다.
+
+- Total: 33
+- UNKNOWN: 0
+- LOW: 1
+- MEDIUM: 6
+- HIGH: 25
+- CRITICAL: 1
+
+## 해석
+
+Trivy를 이용하여 WordPress 3-Tier 웹 서버 환경에서 사용하는 주요 컨테이너 이미지를 스캔하였다.
+스캔 결과 WordPress 이미지에서 가장 많은 취약점이 확인되었으며, Nginx와 MySQL 이미지에서도 HIGH 및 CRITICAL 등급 취약점이 일부 확인되었다.
+이는 컨테이너 이미지 사용 시 최신 이미지 사용, 패키지 업데이트, 불필요한 패키지 제거, 이미지 경량화가 필요함을 보여준다.
