@@ -1,0 +1,647 @@
+Script started on Fri Jun  5 09:32:26 2026
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mpwd[27m
+[7mls -la[27m[K[A[26C[27mp[27mw[27md[1B[27ml[27ms[27m [27m-[27ml[27ma[?2004l
+/Users/mac/linux/week13
+total 8
+drwxr-xr-x   3 mac  staff   96  6  5 09:32 .
+drwxr-xr-x  20 mac  staff  640  6  5 09:31 ..
+-rw-r--r--   1 mac  staff   43  6  5 09:32 2026_20201000_week13_log.txt
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdf -h[27m
+[7mdocker ps[27m[K[A[23C[27md[27mf[27m [27m-[27mh[1B[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    17Gi    29Gi    38%    426k  300M    0%   /
+devfs            226Ki   226Ki     0Bi   100%     783     0  100%   /dev
+/dev/disk3s6     460Gi   2.0Gi    29Gi     7%       2  300M    0%   /System/Volumes/VM
+/dev/disk3s2     460Gi    15Gi    29Gi    35%    2.0k  300M    0%   /System/Volumes/Preboot
+/dev/disk3s4     460Gi   777Mi    29Gi     3%     344  300M    0%   /System/Volumes/Update
+/dev/disk2s2     500Mi   6.0Mi   481Mi     2%       1  4.9M    0%   /System/Volumes/xarts
+/dev/disk2s1     500Mi   5.4Mi   481Mi     2%      35  4.9M    0%   /System/Volumes/iSCPreboot
+/dev/disk2s3     500Mi   2.9Mi   481Mi     1%      70  4.9M    0%   /System/Volumes/Hardware
+/dev/disk3s5     460Gi   395Gi    29Gi    94%    2.6M  300M    1%   /System/Volumes/Data
+map auto_home      0Bi     0Bi     0Bi   100%       0     0     -   /System/Volumes/Data/home
+/dev/disk5s1     8.4Gi   8.1Gi   247Mi    98%      13  2.5M    0%   /Library/Developer/CoreSimulator/Cryptex/Images/bundle/SimRuntimeBundle-56129156-A442-4A57-A0A6-87A081953B0F
+/dev/disk7s1      18Gi    18Gi   475Mi    98%    460k  4.9M    9%   /Library/Developer/CoreSimulator/Volumes/iOS_22D8075
+/dev/disk9s1     8.5Gi   8.2Gi   252Mi    98%      13  2.6M    0%   /Library/Developer/CoreSimulator/Cryptex/Images/bundle/SimRuntimeBundle-1D53EE4F-D00B-49A5-B887-FB40B0007AFD
+/dev/disk11s1     19Gi    19Gi   495Mi    98%    559k  5.1M   10%   /Library/Developer/CoreSimulator/Volumes/iOS_22G86
+/dev/disk1s1     5.0Gi   2.1Gi   2.9Gi    43%      68   30M    0%   /System/Volumes/Update/SFR/mnt1
+/dev/disk3s1     460Gi    17Gi    29Gi    38%    459k  300M    0%   /System/Volumes/Update/mnt1
+failed to connect to the docker API at unix:///Users/mac/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/mac/.docker/run/docker.sock: connect: no such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+failed to connect to the docker API at unix:///Users/mac/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/mac/.docker/run/docker.sock: connect: no such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker version[27m[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27mv[27me[27mr[27ms[27mi[27mo[27mn[?2004l
+Client:
+ Version:           29.2.1
+ API version:       1.53
+ Go version:        go1.25.6
+ Git commit:        a5c7197
+ Built:             Mon Feb  2 17:16:37 2026
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.64.0 (221278)
+ Engine:
+  Version:          29.2.1
+  API version:      1.53 (minimum version 1.44)
+  Go version:       go1.25.6
+  Git commit:       6bc6209
+  Built:            Mon Feb  2 17:16:47 2026
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.2.1
+  GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
+ runc:
+  Version:          1.3.4
+  GitCommit:        v1.3.4-0-gd6d73eb8
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+CONTAINER ID   IMAGE                           COMMAND                   CREATED       STATUS                             PORTS                                                                                NAMES
+cccdc26e69ba   nginx:alpine                    "/docker-entrypoint.…"   7 days ago    Up 22 seconds                      0.0.0.0:8080->80/tcp, [::]:8080->80/tcp, 0.0.0.0:8443->443/tcp, [::]:8443->443/tcp   wp_nginx
+b6c52046a8b2   netdata/netdata:latest          "/usr/sbin/run.sh"        2 weeks ago   Up 22 seconds (health: starting)   0.0.0.0:19999->19999/tcp, [::]:19999->19999/tcp                                      wp_netdata
+051e6c39d128   portainer/portainer-ce:latest   "/portainer"              2 weeks ago   Up 22 seconds                      0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp                                          wp_portainer
+ac3788eef9aa   wordpress:php8.2-fpm            "docker-entrypoint.s…"   3 weeks ago   Up 22 seconds                      9000/tcp                                                                             wp_app
+f71e77815f16   mysql:8.0                       "docker-entrypoint.s…"   3 weeks ago   Up 22 seconds (healthy)            3306/tcp, 33060/tcp                                                                  wp_db
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mcd ~/linux/week13[27m[17D[27mc[27md[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mmkdir -p backup/db[27m[18D[27mm[27mk[27md[27mi[27mr[27m [27m-[27mp[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mmkdir -p backup/files[27m[21D[27mm[27mk[27md[27mi[27mr[27m [27m-[27mp[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mmkdir -p restore[27m[16D[27mm[27mk[27md[27mi[27mr[27m [27m-[27mp[27m [27mr[27me[27ms[27mt[27mo[27mr[27me[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mmkdir -p restic-repo[27m[20D[27mm[27mk[27md[27mi[27mr[27m [27m-[27mp[27m [27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mfind . -type d[27m[14D[27mf[27mi[27mn[27md[27m [27m.[27m [27m-[27mt[27my[27mp[27me[27m [27md[?2004l
+.
+./restic-repo
+./backup
+./backup/files
+./backup/db
+./restore
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mwhich restic[27m[12D[27mw[27mh[27mi[27mc[27mh[27m [27mr[27me[27ms[27mt[27mi[27mc[?2004l
+restic not found
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic version[27m[14D[27mr[27me[27ms[27mt[27mi[27mc[27m [27mv[27me[27mr[27ms[27mi[27mo[27mn[?2004l
+zsh: command not found: restic
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mbrew install restic[27m[19D[27mb[27mr[27me[27mw[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27mr[27me[27ms[27mt[27mi[27mc[?2004l
+[34m==>[0m [1mAuto-updating Homebrew...[0m
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+[34m==>[0m [1mAuto-updated Homebrew![0m
+Updated 2 taps (homebrew/core and homebrew/cask).
+[34m==>[0m [1mNew Formulae[0m
+ansible@13: Automate deployment, configuration, and upgrading
+aube: Fast Node.js package manager
+bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager
+cc-switch-cli: All-in-one assistant tool for Claude Code, Codex, Gemini, OpenCode and OpenClaw
+cozypkg: CLI for managing Cozystack packages
+dz6: Fast Vim-inspired TUI hex editor
+ghcid: Very low feature GHCi based IDE
+ghcitty: Fast, friendly GHCi
+gixy: NGINX configuration static analyzer focused on security
+hookdeck: Forward webhook events from Hookdeck to a local server
+libbcg729: Encoder and decoder of the ITU G.729 Annex A/B speech codec
+libredwg: DWG utilities
+m4rie: Library for fast arithmetic with dense matrices over GF(2^e), 2<=e<=16
+miniz: Lossless, high-performance data compression library (zlib/Deflate)
+pitchfork: CLI for managing daemons with a focus on developer experience
+quien: Better WHOIS and domain intelligence toolkit
+ratty: GPU-rendered terminal emulator with inline 3D graphics
+sdl2-compat: SDL2 compatibility layer that uses SDL3 behind the scenes
+sdl3_net: Simple cross-platform wrapper over TCP/IP sockets
+tdf: TUI-based PDF viewer
+telegram-send: Command-line tool to send Telegram messages
+vim-classic: Vim 8 long term support version with no LLM-generated code
+wl-clipboard: Command-line copy/paste utilities for Wayland
+[34m==>[0m [1mNew Casks[0m
+agentsmesh: AI agent workforce platform
+auto-subs: Subtitle generator for audio and video files
+cc-pocket: Remote client for Codex and Claude coding agents
+choragus: Sonos controller
+dbx: Database management tool
+devin-cli: Coding agent with Devin Cloud integration
+exo: Run AI models locally across multiple devices
+facescreen: Camera and text overlay for presentations and screen sharing
+font-montenegrin-gothic-one
+font-xiaolai
+font-xiaolai-mono
+ghostvm: Native macOS Virtual Machines for Apple Silicon
+harvest: Time tracking application
+mactools: Menu bar toolbox
+meetily: Meeting transcription and analysis application
+mirai: Inference engine for AI models
+mister-plimsoll: Storage volume usage monitoring and fullness notifications
+open-island: Native companion app for AI coding agents
+openlogi: Local-first alternative to Logitech Options+ for HID++ devices
+openpencil: Open-source design editor compatible with Figma
+ping-island: Menu bar status for coding agent sessions
+rcmd: App switcher driven by the Right Command key
+speechify-ai-assistant: AI-powered reading and voice assistant
+tangleguard-cli: Codebase Architecture Context via the CLI for LLMs and Humans
+vmlx: Run local AI models on Apple Silicon
+whatcable: Menu bar app for USB-C cable diagnostics
+yojam: Open links in selected browser, profiles, or apps
+
+You have [1m64[0m outdated formulae and [1m2[0m outdated casks installed.
+
+Inspect the formula dependency plan before installing with `brew install --ask`.
+Enable ask mode by setting `HOMEBREW_ASK=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+[32m==>[0m [1mFetching downloads for: [32mrestic[39m[0m
+[?25l[34m⠋[0m Bottle Manifest restic (0.18.1)[K[0G[34m⠋[0m Bottle Manifest restic (0.18.1)[K[0G[34m⠙[0m Bottle Manifest restic (0.18.1)[K[0G[34m⠙[0m Bottle Manifest restic (0.18.1)[K[0G[34m⠚[0m Bottle Manifest restic (0.18.1)[K[0G[34m⠚[0m Bottle Manifest restic (0.18.1)[K[0G[32m✔︎[0m Bottle Manifest restic (0.18.1)                    Downloaded    7.5KB/  7.5KB
+[K[?25h[?25l[34m⠞[0m Bottle restic (0.18.1)[K[0G[34m⠞[0m Bottle restic (0.18.1)[K[0G[34m⠖[0m Bottle restic (0.18.1)[K[0G[34m⠖[0m Bottle restic (0.18.1)[K[0G[34m⠦[0m Bottle restic (0.18.1)[K[0G[34m⠦[0m Bottle restic (0.18.1)[K[0G[34m⠴[0m Bottle restic (0.18.1)[K[0G[34m⠴[0m Bottle restic (0.18.1)[K[0G[34m⠲[0m Bottle restic (0.18.1)[K[0G[34m⠲[0m Bottle restic (0.18.1)[K[0G[34m⠳[0m Bottle restic (0.18.1)[K[0G[34m⠳[0m Bottle restic (0.18.1) #                           Downloading 307.2KB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1) #                           Downloading 585.7KB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1) ##                          Downloading 847.9KB/ 10.6MB[K[0G[34m⠋[0m Bottle restic (0.18.1) ###                         Downloading   1.1MB/ 10.6MB[K[0G[34m⠋[0m Bottle restic (0.18.1) ###                         Downloading   1.3MB/ 10.6MB[K[0G[34m⠙[0m Bottle restic (0.18.1) ####                        Downloading   1.7MB/ 10.6MB[K[0G[34m⠙[0m Bottle restic (0.18.1) #####                       Downloading   1.9MB/ 10.6MB[K[0G[34m⠚[0m Bottle restic (0.18.1) ######                      Downloading   2.3MB/ 10.6MB[K[0G[34m⠚[0m Bottle restic (0.18.1) ######                      Downloading   2.5MB/ 10.6MB[K[0G[34m⠞[0m Bottle restic (0.18.1) #######                     Downloading   2.8MB/ 10.6MB[K[0G[34m⠞[0m Bottle restic (0.18.1) ########                    Downloading   3.1MB/ 10.6MB[K[0G[34m⠖[0m Bottle restic (0.18.1) ########                    Downloading   3.3MB/ 10.6MB[K[0G[34m⠖[0m Bottle restic (0.18.1) #########                   Downloading   3.6MB/ 10.6MB[K[0G[34m⠦[0m Bottle restic (0.18.1) ##########                  Downloading   3.8MB/ 10.6MB[K[0G[34m⠦[0m Bottle restic (0.18.1) ###########                 Downloading   4.1MB/ 10.6MB[K[0G[34m⠴[0m Bottle restic (0.18.1) ###########                 Downloading   4.5MB/ 10.6MB[K[0G[34m⠴[0m Bottle restic (0.18.1) ############                Downloading   4.8MB/ 10.6MB[K[0G[34m⠲[0m Bottle restic (0.18.1) #############               Downloading   5.1MB/ 10.6MB[K[0G[34m⠲[0m Bottle restic (0.18.1) ##############              Downloading   5.4MB/ 10.6MB[K[0G[34m⠳[0m Bottle restic (0.18.1) ##############              Downloading   5.6MB/ 10.6MB[K[0G[34m⠳[0m Bottle restic (0.18.1) ###############             Downloading   6.0MB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1) ################            Downloading   6.2MB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1) #################           Downloading   6.5MB/ 10.6MB[K[0G[34m⠋[0m Bottle restic (0.18.1) #################           Downloading   6.8MB/ 10.6MB[K[0G[34m⠋[0m Bottle restic (0.18.1) ##################          Downloading   7.0MB/ 10.6MB[K[0G[34m⠙[0m Bottle restic (0.18.1) ###################         Downloading   7.3MB/ 10.6MB[K[0G[34m⠙[0m Bottle restic (0.18.1) ###################         Downloading   7.6MB/ 10.6MB[K[0G[34m⠚[0m Bottle restic (0.18.1) ####################        Downloading   7.9MB/ 10.6MB[K[0G[34m⠚[0m Bottle restic (0.18.1) #####################       Downloading   8.2MB/ 10.6MB[K[0G[34m⠞[0m Bottle restic (0.18.1) ######################      Downloading   8.5MB/ 10.6MB[K[0G[34m⠞[0m Bottle restic (0.18.1) ######################      Downloading   8.7MB/ 10.6MB[K[0G[34m⠖[0m Bottle restic (0.18.1) #######################     Downloading   9.1MB/ 10.6MB[K[0G[34m⠖[0m Bottle restic (0.18.1) ########################    Downloading   9.3MB/ 10.6MB[K[0G[34m⠦[0m Bottle restic (0.18.1) ########################    Downloading   9.6MB/ 10.6MB[K[0G[34m⠦[0m Bottle restic (0.18.1) #########################   Downloading   9.8MB/ 10.6MB[K[0G[34m⠴[0m Bottle restic (0.18.1) ##########################  Downloading  10.0MB/ 10.6MB[K[0G[34m⠴[0m Bottle restic (0.18.1) ##########################  Downloading  10.3MB/ 10.6MB[K[0G[34m⠲[0m Bottle restic (0.18.1) ########################### Downloading  10.6MB/ 10.6MB[K[0G[34m⠲[0m Bottle restic (0.18.1)                             Extracting   10.6MB/ 10.6MB[K[0G[34m⠳[0m Bottle restic (0.18.1)                             Extracting   10.6MB/ 10.6MB[K[0G[34m⠳[0m Bottle restic (0.18.1)                             Extracting   10.6MB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1)                             Extracting   10.6MB/ 10.6MB[K[0G[34m⠓[0m Bottle restic (0.18.1)                             Extracting   10.6MB/ 10.6MB[K[0G[32m✔︎[0m Bottle restic (0.18.1)                             Downloaded   10.6MB/ 10.6MB
+[K[?25h[34m==>[0m [1mPouring restic--0.18.1.arm64_sequoia.bottle.tar.gz[0m
+🍺  /opt/homebrew/Cellar/restic/0.18.1: 47 files, 30.4MB
+[34m==>[0m [1mRunning `brew cleanup restic`...[0m
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+[32m==>[0m [1m`brew cleanup` has not been run in the last 30 days, running now...[0m
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/mac/Library/Caches/Homebrew/portable-ruby-4.0.3.arm64_big_sur.bottle.tar.gz... (12.7MB)
+Removing: /Users/mac/Library/Caches/Homebrew/bootsnap/486642c4537c43cd53394cb601f180d78bab6134addf25b56521e9246c561720... (648 files, 6MB)
+Removing: /Users/mac/Library/Caches/Homebrew/bootsnap/901322dc6519043c0dc5100dc16cf5e4e2663478e9d1fc35fa74caa85406536e... (1,026 files, 9MB)
+Removing: /Users/mac/Library/Logs/Homebrew/gmp... (64B)
+Removing: /Users/mac/Library/Logs/Homebrew/pandoc... (64B)
+Removing: /Users/mac/Library/Logs/Homebrew/ncurses... (64B)
+Removing: /Users/mac/Library/Logs/Homebrew/watch... (64B)
+[32m==>[0m [1mCaveats[0m
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mwhich restic[27m
+[7mrestic version[27m[K[A[18C[27mw[27mh[27mi[27mc[27mh[27m [27mr[27me[27ms[27mt[27mi[27mc[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27mv[27me[27mr[27ms[27mi[27mo[27mn[?2004l
+/opt/homebrew/bin/restic
+restic 0.18.1 compiled with go1.25.1 on darwin/arm64
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic init --repo ~/linux/week13/restic-repo[27m[45D[27mr[27me[27ms[27mt[27mi[27mc[27m [27mi[27mn[27mi[27mt[27m [27m-[27m-[27mr[27me[27mp[27mo[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[?2004l
+enter password for new repository: 
+enter password again: 
+Fatal: passwords do not match
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic init --repo ~/linux/week13/restic-repo[27m[45D[27mr[27me[27ms[27mt[27mi[27mc[27m [27mi[27mn[27mi[27mt[27m [27m-[27m-[27mr[27me[27mp[27mo[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[?2004l
+enter password for new repository: 
+enter password again: 
+created restic repository 0e68c2b686 at /Users/mac/linux/week13/restic-repo
+
+Please note that knowledge of your password is required to access
+the repository. Losing your password means that your data is
+irrecoverably lost.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mls -la restic-repo[27m
+[7mdocker volume ls[27m[K
+[7mdocker volume inspect wordpress_wp_data[27m[K[A[A[27ml[27ms[27m [27m-[27ml[27ma[27m [27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[1B[27md[27mo[27mc[27mk[27me[27mr[27m [27mv[27mo[27ml[27mu[27mm[27me[27m [27ml[27ms[1B[27md[27mo[27mc[27mk[27me[27mr[27m [27mv[27mo[27ml[27mu[27mm[27me[27m [27mi[27mn[27ms[27mp[27me[27mc[27mt[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[?2004l
+total 8
+drwxr-xr-x    8 mac  staff   256  6  5 09:36 .
+drwxr-xr-x    6 mac  staff   192  6  5 09:35 ..
+-r--------@   1 mac  staff   155  6  5 09:36 config
+drwx------@ 258 mac  staff  8256  6  5 09:36 data
+drwx------@   2 mac  staff    64  6  5 09:36 index
+drwx------@   3 mac  staff    96  6  5 09:36 keys
+drwx------@   2 mac  staff    64  6  5 09:36 locks
+drwx------@   2 mac  staff    64  6  5 09:36 snapshots
+DRIVER    VOLUME NAME
+local     week11_portainer_data
+local     wordpress_wp_data
+[
+    {
+        "CreatedAt": "2026-05-15T00:37:39Z",
+        "Driver": "local",
+        "Labels": {
+            "com.docker.compose.config-hash": "101ccfb75efebfb0649f1be6f3db366a65540af60664dcf11076e052467e52e3",
+            "com.docker.compose.project": "wordpress",
+            "com.docker.compose.version": "5.1.0",
+            "com.docker.compose.volume": "wp_data"
+        },
+        "Mountpoint": "/var/lib/docker/volumes/wordpress_wp_data/_data",
+        "Name": "wordpress_wp_data",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mls -lh /var/lib/docker/volumes/wordpress_wp_data[7m/[7m_data/[27m[K[A[25C[27ml[27ms[27m [27m-[27ml[27mh[27m [27m/[27mv[27ma[27mr[27m/[27ml[27mi[27mb[27m/[27md[27mo[27mc[27mk[27me[27mr[27m/[27mv[27mo[27ml[27mu[27mm[27me[27ms[27m/[27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma/[27m_[27md[27ma[27mt[27ma[27m/[?2004l
+ls: /var/lib/docker/volumes/wordpress_wp_data/_data/: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdu -sh /var/lib/docker/volumes/wordpress_wp_data[7m/[7m_data/[27m[K[A[25C[27md[27mu[27m [27m-[27ms[27mh[27m [27m/[27mv[27ma[27mr[27m/[27ml[27mi[27mb[27m/[27md[27mo[27mc[27mk[27me[27mr[27m/[27mv[27mo[27ml[27mu[27mm[27me[27ms[27m/[27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma/[27m_[27md[27ma[27mt[27ma[27m/[?2004l
+du: /var/lib/docker/volumes/wordpress_wp_data/_data/: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker run --rm \[27m
+[7m  -v wordpress_wp_data:/data \[27m[K
+[7m  alpine \[27m[K
+[7m  sh -c "ls -lh /data && du -sh /data"[27m[K[3A[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27m\[1B[27m [27m [27m-[27mv[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[27m:[27m/[27md[27ma[27mt[27ma[27m [27m\[1B[27m [27m [27ma[27ml[27mp[27mi[27mn[27me[27m [27m\[1B[27m [27m [27ms[27mh[27m [27m-[27mc[27m [27m"[27ml[27ms[27m [27m-[27ml[27mh[27m [27m/[27md[27ma[27mt[27ma[27m [27m&[27m&[27m [27md[27mu[27m [27m-[27ms[27mh[27m [27m/[27md[27ma[27mt[27ma[27m"[?2004l
+Unable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+
+[1A[2Kd17f077ada11: Pulling fs layer [1B[1A[2Kd17f077ada11: Downloading  1.049MB/4.2MB[1B[1A[2Kd17f077ada11: Downloading  1.049MB/4.2MB[1B[1A[2Kd17f077ada11: Downloading  2.097MB/4.2MB[1B[1A[2Kd17f077ada11: Downloading  2.097MB/4.2MB[1B[1A[2Kd17f077ada11: Downloading  3.146MB/4.2MB[1B[1A[2Kd17f077ada11: Downloading  3.146MB/4.2MB[1B[1A[2Kd17f077ada11: Download complete [1B[1A[2Kd17f077ada11: Extracting 1 s[1B[1A[2Kd17f077ada11: Pull complete [1B
+[1A[2K2bf6ea167e4a: Download complete [1B
+[1A[2K4c52853c1057: Download complete [1BDigest: sha256:5b10f432ef3da1b8d4c7eb6c487f2f5a8f096bc91145e68878dd4a5019afde11
+Status: Downloaded newer image for alpine:latest
+total 252K   
+-rw-r--r--    1 33       33           405 Feb  6  2020 index.php
+-rw-r--r--    1 33       33         19.4K Mar  6  2025 license.txt
+-rw-r--r--    1 33       33          7.3K Jul  8  2025 readme.html
+-rw-r--r--    1 33       33          7.2K Oct  8  2025 wp-activate.php
+drwxr-xr-x    9 33       33          4.0K Mar 11 14:28 wp-admin
+-rw-r--r--    1 33       33           351 Feb  6  2020 wp-blog-header.php
+-rw-r--r--    1 33       33          2.3K Jun 14  2023 wp-comments-post.php
+-rw-r--r--    1 33       33          5.7K May  8 20:27 wp-config-docker.php
+-rw-r--r--    1 33       33          3.3K Aug 12  2025 wp-config-sample.php
+-rw-r--r--    1 33       33          5.8K May 15 00:37 wp-config.php
+drwxr-xr-x    7 33       33          4.0K May 15 00:42 wp-content
+-rw-r--r--    1 33       33          5.5K Aug  2  2024 wp-cron.php
+drwxr-xr-x   31 33       33         16.0K Mar 11 14:28 wp-includes
+-rw-r--r--    1 33       33          2.4K Apr 30  2025 wp-links-opml.php
+-rw-r--r--    1 33       33          3.8K Mar 11  2024 wp-load.php
+-rw-r--r--    1 33       33         50.2K Oct 29  2025 wp-login.php
+-rw-r--r--    1 33       33          8.5K Apr  2  2025 wp-mail.php
+-rw-r--r--    1 33       33         30.3K Nov  7  2025 wp-settings.php
+-rw-r--r--    1 33       33         33.7K Mar 10  2025 wp-signup.php
+-rw-r--r--    1 33       33          5.1K Aug 19  2025 wp-trackback.php
+-rw-r--r--    1 33       33          3.1K Nov  8  2024 xmlrpc.php
+90.7M	/data
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mcd ~/linux/week13[27m
+[K
+[7mdocker run --rm \[27m[K
+[7m  -v wordpress_wp_data:/data \[27m[K
+[7m  -v "$PWD/backup/files":/backup \[27m[K
+[7m  alpine \[27m[K
+[7m  sh -c "cd /data && tar czf /backup/wp_files_$(date +%F).tar.gz ."[27m[K
+[K
+[7mls -lh backup/files[27m[K[8A[13C[27mc[27md[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[2B[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27m\[1B[27m [27m [27m-[27mv[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[27m:[27m/[27md[27ma[27mt[27ma[27m [27m\[1B[27m [27m [27m-[27mv[27m [27m"[27m$[27mP[27mW[27mD[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[27m"[27m:[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m [27m\[1B[27m [27m [27ma[27ml[27mp[27mi[27mn[27me[27m [27m\[1B[27m [27m [27ms[27mh[27m [27m-[27mc[27m [27m"[27mc[27md[27m [27m/[27md[27ma[27mt[27ma[27m [27m&[27m&[27m [27mt[27ma[27mr[27m [27mc[27mz[27mf[27m [27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mw[27mp[27m_[27mf[27mi[27ml[27me[27ms[27m_[27m$[27m([27md[27ma[27mt[27me[27m [27m+[27m%[27mF[27m)[27m.[27mt[27ma[27mr[27m.[27mg[27mz[27m [27m.[27m"[2B[27ml[27ms[27m [27m-[27ml[27mh[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[?2004l
+total 58624
+-rw-r--r--  1 mac  staff    28M  6  5 09:54 wp_files_2026-06-05.tar.gz
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo backup ~/li[7mn[7mux/week13/backup/files/ --tag wp_files --tag week13[27m[K[A[20D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m [27m~[27m/[27ml[27min[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[27m/[27m [27m-[27m-[27mt[27ma[27mg[27m [27mw[27mp[27m_[27mf[27mi[27ml[27me[27ms[27m [27m-[27m-[27mt[27ma[27mg[27m [27mw[27me[27me[27mk[27m1[27m3[?2004l
+enter password for repository: 
+[2Krepository 0e68c2b6 opened (version 2, compression level auto)
+[2Kcreated new cache in /Users/mac/Library/Caches/restic
+[2Kno parent snapshot found, will read all files
+[2K[0:00]          0 index files loaded
+[2K[0:00] 0 files 2.221 MiB, total 1 files 28.106 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_2026-06-05.tar.gz[1A[2K[0:00] 0 files 5.453 MiB, total 1 files 28.106 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_2026-06-05.tar.gz[1A[2K[0:00] 0 files 13.204 MiB, total 1 files 28.106 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_2026-06-05.tar.gz[1A[2K[0:00] 0 files 19.097 MiB, total 1 files 28.106 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_2026-06-05.tar.gz[1A[2K[0:00] 0 files 28.106 MiB, total 1 files 28.106 MiB, 0 errors
+[2K[1A[2K[0:00] 1 files 28.106 MiB, total 1 files 28.106 MiB, 0 errors[2K[0:00] 1 files 28.106 MiB, total 1 files 28.106 MiB, 0 errors[2K[0:00] 1 files 28.106 MiB, total 1 files 28.106 MiB, 0 errors[2K[2K
+[2KFiles:           1 new,     0 changed,     0 unmodified
+[2KDirs:            6 new,     0 changed,     0 unmodified
+[2KAdded to the repository: 28.110 MiB (28.111 MiB stored)
+[2K
+[2Kprocessed 1 files, 28.106 MiB in 0:04
+[2Ksnapshot 0c7c4857 saved
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo snapshots[27m
+[7mrestic -r ~/linux/week13/restic-repo stats[27m[K[A[10D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27ms[27mn[27ma[27mp[27ms[27mh[27mo[27mt[27ms[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27ms[27mt[27ma[27mt[27ms[?2004l
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+ID        Time                 Host                      Tags             Paths                                 Size
+--------------------------------------------------------------------------------------------------------------------------
+0c7c4857  2026-06-05 09:54:45  macui-MacBookPro-2.local  wp_files,week13  /Users/mac/linux/week13/backup/files  28.106 MiB
+--------------------------------------------------------------------------------------------------------------------------
+1 snapshots
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+[2K[0:00] 100.00%  1 / 1 index files loaded
+scanning...
+Stats in restore-size mode:
+     Snapshots processed:  1
+        Total File Count:  7
+              Total Size:  28.106 MiB
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mcd ~/linux/week13[27m
+[K
+[7mdocker run --rm \[27m[K
+[7m  -v wordpress_wp_data:/data \[27m[K
+[7m  -v "$PWD/backup/files":/backup \[27m[K
+[7m  alpine \[27m[K
+[7m  sh -c "cd /data && tar czf /backup/wp_files_after_$(date +%F_%H%M).tar.gz ."[27m[K
+[K
+[7mls -lh backup/files[27m[K[8A[13C[27mc[27md[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[2B[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27m\[1B[27m [27m [27m-[27mv[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[27m:[27m/[27md[27ma[27mt[27ma[27m [27m\[1B[27m [27m [27m-[27mv[27m [27m"[27m$[27mP[27mW[27mD[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[27m"[27m:[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m [27m\[1B[27m [27m [27ma[27ml[27mp[27mi[27mn[27me[27m [27m\[1B[27m [27m [27ms[27mh[27m [27m-[27mc[27m [27m"[27mc[27md[27m [27m/[27md[27ma[27mt[27ma[27m [27m&[27m&[27m [27mt[27ma[27mr[27m [27mc[27mz[27mf[27m [27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mw[27mp[27m_[27mf[27mi[27ml[27me[27ms[27m_[27ma[27mf[27mt[27me[27mr[27m_[27m$[27m([27md[27ma[27mt[27me[27m [27m+[27m%[27mF[27m_[27m%[27mH[27m%[27mM[27m)[27m.[27mt[27ma[27mr[27m.[27mg[27mz[27m [27m.[27m"[2B[27ml[27ms[27m [27m-[27ml[27mh[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[?2004l
+total 116192
+-rw-r--r--  1 mac  staff    28M  6  5 09:54 wp_files_2026-06-05.tar.gz
+-rw-r--r--  1 mac  staff    28M  6  5 10:00 wp_files_after_2026-06-05_1000.tar.gz
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo backup ~/li[7mn[7mux/week13/backup/files/ --tag wp_files --tag week13[27m[K[A[20D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m [27m~[27m/[27ml[27min[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27mf[27mi[27ml[27me[27ms[27m/[27m [27m-[27m-[27mt[27ma[27mg[27m [27mw[27mp[27m_[27mf[27mi[27ml[27me[27ms[27m [27m-[27m-[27mt[27ma[27mg[27m [27mw[27me[27me[27mk[27m1[27m3[?2004l
+enter password for repository: 
+[2Krepository 0e68c2b6 opened (version 2, compression level auto)
+[2Kusing parent snapshot 0c7c4857
+[2K[0:00] 100.00%  1 / 1 index files loaded
+[2K[0:00] 1 files 30.327 MiB, total 2 files 56.212 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_after_2026-06-05_1000.tar.gz[1A[2K[0:00] 1 files 33.559 MiB, total 2 files 56.212 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_after_2026-06-05_1000.tar.gz[1A[2K[0:00] 1 files 41.310 MiB, total 2 files 56.212 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_after_2026-06-05_1000.tar.gz[1A[2K[0:00] 1 files 47.203 MiB, total 2 files 56.212 MiB, 0 errors
+[2K/Users/mac/linux/week13/backup/files/wp_files_after_2026-06-05_1000.tar.gz[1A[2K[0:00] 2 files 56.212 MiB, total 2 files 56.212 MiB, 0 errors
+[2K[1A[2K[0:00] 2 files 56.212 MiB, total 2 files 56.212 MiB, 0 errors[2K[2K
+[2KFiles:           1 new,     0 changed,     1 unmodified
+[2KDirs:            0 new,     6 changed,     0 unmodified
+[2KAdded to the repository: 5.331 KiB (2.793 KiB stored)
+[2K
+[2Kprocessed 2 files, 56.212 MiB in 0:06
+[2Ksnapshot 0cb2b9f0 saved
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo snapshots[27m
+[7mrestic -r ~/linux/week13/restic-repo diff 0c7c4857 latest[27m[K[A[25D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27ms[27mn[27ma[27mp[27ms[27mh[27mo[27mt[27ms[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27md[27mi[27mf[27mf[27m [27m0[27mc[27m7[27mc[27m4[27m8[27m5[27m7[27m [27ml[27ma[27mt[27me[27ms[27mt[?2004l
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+ID        Time                 Host                      Tags             Paths                                 Size
+--------------------------------------------------------------------------------------------------------------------------
+0c7c4857  2026-06-05 09:54:45  macui-MacBookPro-2.local  wp_files,week13  /Users/mac/linux/week13/backup/files  28.106 MiB
+0cb2b9f0  2026-06-05 10:01:27  macui-MacBookPro-2.local  wp_files,week13  /Users/mac/linux/week13/backup/files  56.212 MiB
+--------------------------------------------------------------------------------------------------------------------------
+2 snapshots
+enter password for repository: 
+wrong password or no key found. Try again
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+Fatal: no matching ID found for prefix "latest"
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo diff 0c7c48[7m5[7m7 0cb2b9f0[27m[K[A[21C[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27md[27mi[27mf[27mf[27m [27m0[27mc[27m7[27mc[27m4[27m85[27m7[27m [27m0[27mc[27mb[27m2[27mb[27m9[27mf[27m0[?2004l
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+comparing snapshot 0c7c4857 to 0cb2b9f0:
+
+[2K[0:00] 100.00%  2 / 2 index files loaded
++    /Users/mac/linux/week13/backup/files/wp_files_after_2026-06-05_1000.tar.gz
+
+Files:           1 new,     0 removed,     0 changed
+Dirs:            0 new,     0 removed
+Others:          0 new,     0 removed
+Data Blobs:      0 new,     0 removed
+Tree Blobs:      7 new,     7 removed
+  Added:   5.331 KiB
+  Removed: 3.760 KiB
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo check[27m[42D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mc[27mh[27me[27mc[27mk[?2004l
+[2Kusing temporary cache in /var/folders/v1/t9ml9hds7zq1fx43dzcxl_g00000gn/T/restic-check-cache-345218125
+[2Kcreate exclusive lock for repository
+enter password for repository: 
+[2Krepository 0e68c2b6 opened (version 2, compression level auto)
+[2Kcreated new cache in /var/folders/v1/t9ml9hds7zq1fx43dzcxl_g00000gn/T/restic-check-cache-345218125
+[2Kload indexes
+[2K[0:00] 100.00%  2 / 2 index files loaded
+[2Kcheck all packs
+[2Kcheck snapshots, trees and blobs
+[2K[0:00] 100.00%  2 / 2 snapshots
+[2Kno errors were found
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "SELECT COUNT(*) FROM wp_posts;"[27m[K[A[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mS[27mE[27mL[27mE[27mC[27mT[27m [27mC[27mO[27mU[27mN[27mT[27m([27m*[27m)[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+8
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysqldump --no-tablespaces -u [7mw[7mpuser -pwppass_2026! wordpress | gzip > ~/linux/week13/backup/db/db_$(date +%F)[7m.[7msql.gz[27m[K[A[A[25C[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27md[27mu[27mm[27mp[27m [27m-[27m-[27mn[27mo[27m-[27mt[27ma[27mb[27ml[27me[27ms[27mp[27ma[27mc[27me[27ms[27m [27m-[27mu[27m w[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m![27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m|[27m [27mg[27mz[27mi[27mp[27m [27m>[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[27m/[27md[27mb[27m_[27m$[27m([27md[27ma[27mt[27me[27m [27m+[27m%[27mF[27m).[27ms[27mq[27ml[27m.[27mg[27mz[?2004l
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mls -lh ~/linux/week13/backup/db[27m
+[7mgunzip -c ~/linux/week13/backup/db/db_$(date +%F).sql.gz | grep "^CREATE TABLE"[27m[K[A[47D[27ml[27ms[27m [27m-[27ml[27mh[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[1B[27mg[27mu[27mn[27mz[27mi[27mp[27m [27m-[27mc[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[27m/[27md[27mb[27m_[27m$[27m([27md[27ma[27mt[27me[27m [27m+[27m%[27mF[27m)[27m.[27ms[27mq[27ml[27m.[27mg[27mz[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m"[27m^[27mC[27mR[27mE[27mA[27mT[27mE[27m [27mT[27mA[27mB[27mL[27mE[27m"[?2004l
+total 680
+-rw-r--r--  1 mac  staff   337K  6  5 10:03 db_2026-06-05.sql.gz
+CREATE TABLE `wp_commentmeta` (
+CREATE TABLE `wp_comments` (
+CREATE TABLE `wp_links` (
+CREATE TABLE `wp_options` (
+CREATE TABLE `wp_postmeta` (
+CREATE TABLE `wp_posts` (
+CREATE TABLE `wp_term_relationships` (
+CREATE TABLE `wp_term_taxonomy` (
+CREATE TABLE `wp_termmeta` (
+CREATE TABLE `wp_terms` (
+CREATE TABLE `wp_usermeta` (
+CREATE TABLE `wp_users` (
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7m[Warning] Using a password on the command line i[7mn[7mterface can be insecure.[27m[K[A[7C[27m[[27mW[27ma[27mr[27mn[27mi[27mn[27mg[27m][27m [27mU[27ms[27mi[27mn[27mg[27m [27ma[27m [27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m [27mo[27mn[27m [27mt[27mh[27me[27m [27mc[27mo[27mm[27mm[27ma[27mn[27md[27m [27ml[27mi[27mn[27me[27m [27min[27mt[27me[27mr[27mf[27ma[27mc[27me[27m [27mc[27ma[27mn[27m [27mb[27me[27m [27mi[27mn[27ms[27me[27mc[27mu[27mr[27me[27m.[?2004l
+zsh: no matches found: [Warning]
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo backup ~/li[7mn[7mux/week13/backup/db/ --tag db_backup --tag $(date +%F)[27m[K[A[23D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m [27m~[27m/[27ml[27min[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[27m/[27m [27m-[27m-[27mt[27ma[27mg[27m [27md[27mb[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m [27m-[27m-[27mt[27ma[27mg[27m [27m$[27m([27md[27ma[27mt[27me[27m [27m+[27m%[27mF[27m)[?2004l
+enter password for repository: 
+[2Krepository 0e68c2b6 opened (version 2, compression level auto)
+[2Kno parent snapshot found, will read all files
+[2K[0:00] 100.00%  2 / 2 index files loaded
+[2K[0:00] 1 files 337.374 KiB, total 1 files 337.374 KiB, 0 errors[2K[0:00] 1 files 337.374 KiB, total 1 files 337.374 KiB, 0 errors[2K[2K
+[2KFiles:           1 new,     0 changed,     0 unmodified
+[2KDirs:            6 new,     0 changed,     0 unmodified
+[2KAdded to the repository: 339.945 KiB (339.545 KiB stored)
+[2K
+[2Kprocessed 1 files, 337.374 KiB in 0:04
+[2Ksnapshot 0c008c81 saved
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo snapshots[27m[46D[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27ms[27mn[27ma[27mp[27ms[27mh[27mo[27mt[27ms[?2004l
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+ID        Time                 Host                      Tags                  Paths                                 Size
+--------------------------------------------------------------------------------------------------------------------------------
+0c7c4857  2026-06-05 09:54:45  macui-MacBookPro-2.local  wp_files,week13       /Users/mac/linux/week13/backup/files  28.106 MiB
+0cb2b9f0  2026-06-05 10:01:27  macui-MacBookPro-2.local  wp_files,week13       /Users/mac/linux/week13/backup/files  56.212 MiB
+0c008c81  2026-06-05 10:04:08  macui-MacBookPro-2.local  db_backup,2026-06-05  /Users/mac/linux/week13/backup/db     337.374 KiB
+--------------------------------------------------------------------------------------------------------------------------------
+3 snapshots
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "SELECT COUNT(*) FROM wp_posts;"[27m[K[A[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mS[27mE[27mL[27mE[27mC[27mT[27m [27mC[27mO[27mU[27mN[27mT[27m([27m*[27m)[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+8
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrestic -r ~/linux/week13/restic-repo snapshots -[7m-[7mtag db_backup[27m[K[A[18C[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27ms[27mn[27ma[27mp[27ms[27mh[27mo[27mt[27ms[27m [27m--[27mt[27ma[27mg[27m [27md[27mb[27m_[27mb[27ma[27mc[27mk[27mu[27mp[?2004l
+enter password for repository: 
+repository 0e68c2b6 opened (version 2, compression level auto)
+ID        Time                 Host                      Tags                  Paths                              Size
+-----------------------------------------------------------------------------------------------------------------------------
+0c008c81  2026-06-05 10:04:08  macui-MacBookPro-2.local  db_backup,2026-06-05  /Users/mac/linux/week13/backup/db  337.374 KiB
+-----------------------------------------------------------------------------------------------------------------------------
+1 snapshots
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "DELETE FROM wp_posts;"[27m[K[A[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mD[27mE[27mL[27mE[27mT[27mE[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "SELECT COUNT(*) FROM wp_posts;"[27m[K[A[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mS[27mE[27mL[27mE[27mC[27mT[27m [27mC[27mO[27mU[27mN[27mT[27m([27m*[27m)[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+0
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrm -rf ~/linux/week13/restore/*[27m
+[7mrestic -r ~/linux/week13/restic-repo restore 0c008c81 --target ~/linux/week13/re[7ms[7mtore/[27m[K[A[A[26C[27mr[27mm[27m [27m-[27mr[27mf[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m/[27m*[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mr[27me[27ms[27mt[27mo[27mr[27me[27m [27m0[27mc[27m0[27m0[27m8[27mc[27m8[27m1[27m [27m-[27m-[27mt[27ma[27mr[27mg[27me[27mt[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27mes[27mt[27mo[27mr[27me[27m/[?2004l
+zsh: sure you want to delete all the files in /Users/mac/linux/week13/restore [yn]? n
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrm -rf ~/linux/week13/restore/*[27m
+[7mrestic -r ~/linux/week13/restic-repo restore 0c008c81 --target ~/linux/week13/re[7ms[7mtore/[27m[K[A[A[26C[27mr[27mm[27m [27m-[27mr[27mf[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m/[27m*[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mr[27me[27ms[27mt[27mo[27mr[27me[27m [27m0[27mc[27m0[27m0[27m8[27mc[27m8[27m1[27m [27m-[27m-[27mt[27ma[27mr[27mg[27me[27mt[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27mes[27mt[27mo[27mr[27me[27m/[?2004l
+zsh: sure you want to delete all the files in /Users/mac/linux/week13/restore [yn]? n
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mrm -rf ~/linux/week13/restore/*[27m
+[7mrestic -r ~/linux/week13/restic-repo restore 0c008c81 --target ~/linux/week13/re[7ms[7mtore/[27m[K[A[A[26C[27mr[27mm[27m [27m-[27mr[27mf[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m/[27m*[1B[27mr[27me[27ms[27mt[27mi[27mc[27m [27m-[27mr[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mi[27mc[27m-[27mr[27me[27mp[27mo[27m [27mr[27me[27ms[27mt[27mo[27mr[27me[27m [27m0[27mc[27m0[27m0[27m8[27mc[27m8[27m1[27m [27m-[27m-[27mt[27ma[27mr[27mg[27me[27mt[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27mes[27mt[27mo[27mr[27me[27m/[?2004l
+zsh: sure you want to delete all the files in /Users/mac/linux/week13/restore [yn]? y
+zsh: no matches found: /Users/mac/linux/week13/restore/*
+enter password for repository: 
+[2Krepository 0e68c2b6 opened (version 2, compression level auto)
+[2K[0:00] 100.00%  3 / 3 index files loaded
+[2Krestoring snapshot 0c008c81 of [/Users/mac/linux/week13/backup/db] at 2026-06-05 10:04:08.071389 +0900 KST by mac@macui-MacBookPro-2.local to /Users/mac/linux/week13/restore/
+[2KSummary: Restored 7 files/dirs (337.374 KiB) in 0:00
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mfind ~/linux/week13/restore -type f[27m
+[7mls -lh ~/linux/week13/restore/Users/mac/linux/week13/backup/db/[27m[K[A[31D[27mf[27mi[27mn[27md[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m [27m-[27mt[27my[27mp[27me[27m [27mf[1B[27ml[27ms[27m [27m-[27ml[27mh[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m/[27mU[27ms[27me[27mr[27ms[27m/[27mm[27ma[27mc[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[27m/[?2004l
+/Users/mac/linux/week13/restore/Users/mac/linux/week13/backup/db/db_2026-06-05.sql.gz
+total 680
+-rw-r--r--@ 1 mac  staff   337K  6  5 10:03 db_2026-06-05.sql.gz
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mgunzip -c ~/linux/week13/restore/Users/mac/linux[7m/[7mweek13/backup/db/db_2026-06-05.sql.gz | docker exec -i wp_db mysql -u wpuser -p[7mw[7mppass_2026! wordpress[27m[K[A[A[10C[27mg[27mu[27mn[27mz[27mi[27mp[27m [27m-[27mc[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mr[27me[27ms[27mt[27mo[27mr[27me[27m/[27mU[27ms[27me[27mr[27ms[27m/[27mm[27ma[27mc[27m/[27ml[27mi[27mn[27mu[27mx/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mb[27ma[27mc[27mk[27mu[27mp[27m/[27md[27mb[27m/[27md[27mb[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m.[27ms[27mq[27ml[27m.[27mg[27mz[27m [27m|[27m [27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mpw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m![27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "SELECT COUNT(*) FROM wp_posts;"[27m[K[A[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mS[27mE[27mL[27mE[27mC[27mT[27m [27mC[27mO[27mU[27mN[27mT[27m([27m*[27m)[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+8
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker exec wp_db mysql -u wpuser -pwppass_2026![7m [7mwordpress -e "SELECT COUNT(*) FROM wp_posts;"[27m[K[A[14D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27mw[27mp[27m_[27md[27mb[27m [27mm[27my[27ms[27mq[27ml[27m [27m-[27mu[27m [27mw[27mp[27mu[27ms[27me[27mr[27m [27m-[27mp[27mw[27mp[27mp[27ma[27ms[27ms[27m_[27m2[27m0[27m2[27m6[27m! [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m [27m-[27me[27m [27m"[27mS[27mE[27mL[27mE[27mC[27mT[27m [27mC[27mO[27mU[27mN[27mT[27m([27m*[27m)[27m [27mF[27mR[27mO[27mM[27m [27mw[27mp[27m_[27mp[27mo[27ms[27mt[27ms[27m;[27m"[?2004l
+mysql: [Warning] Using a password on the command line interface can be insecure.
+COUNT(*)
+8
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mhttps://localhost:8443/wp-admin[27m[31D[27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m4[27m4[27m3[27m/[27mw[27mp[27m-[27ma[27md[27mm[27mi[27mn[?2004l
+zsh: no such file or directory: https://localhost:8443/wp-admin
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker run --rm \[27m
+[7m  -v wordpress_wp_data:/data \[27m[K
+[7m  alpine \[27m[K
+[7m  sh -c "ls -lh /data/wp-content/updraft/"[27m[K[3A[10D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27m\[1B[27m [27m [27m-[27mv[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[27m:[27m/[27md[27ma[27mt[27ma[27m [27m\[1B[27m [27m [27ma[27ml[27mp[27mi[27mn[27me[27m [27m\[1B[27m [27m [27ms[27mh[27m [27m-[27mc[27m [27m"[27ml[27ms[27m [27m-[27ml[27mh[27m [27m/[27md[27ma[27mt[27ma[27m/[27mw[27mp[27m-[27mc[27mo[27mn[27mt[27me[27mn[27mt[27m/[27mu[27mp[27md[27mr[27ma[27mf[27mt[27m/[27m"[?2004l
+total 24M    
+-rw-r--r--    1 33       33        340.1K Jun  5 01:14 backup_2026-06-05-0114_20201000_WordPress_Lab_7d4c641732c1-db.gz
+-rw-r--r--    1 33       33          2.7M Jun  5 01:14 backup_2026-06-05-0114_20201000_WordPress_Lab_7d4c641732c1-others.zip
+-rw-r--r--    1 33       33          7.8M Jun  5 01:14 backup_2026-06-05-0114_20201000_WordPress_Lab_7d4c641732c1-plugins.zip
+-rw-r--r--    1 33       33         12.6M Jun  5 01:14 backup_2026-06-05-0114_20201000_WordPress_Lab_7d4c641732c1-themes.zip
+-rw-r--r--    1 33       33           232 Jun  5 01:14 backup_2026-06-05-0114_20201000_WordPress_Lab_7d4c641732c1-uploads.zip
+-rw-r--r--    1 33       33           112 Jun  5 01:12 index.html
+-rw-r--r--    1 33       33         20.0K Jun  5 01:14 log.7d4c641732c1.txt
+-rw-r--r--    1 33       33           124 Jun  5 01:12 web.config
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mdocker run --rm \[27m
+[7m  -v wordpress_wp_data:/data \[27m[K
+[7m  alpine \[27m[K
+[7m  sh -c "du -sh /data/wp-content/updraft/"[27m[K[3A[10D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mr[27mm[27m [27m\[1B[27m [27m [27m-[27mv[27m [27mw[27mo[27mr[27md[27mp[27mr[27me[27ms[27ms[27m_[27mw[27mp[27m_[27md[27ma[27mt[27ma[27m:[27m/[27md[27ma[27mt[27ma[27m [27m\[1B[27m [27m [27ma[27ml[27mp[27mi[27mn[27me[27m [27m\[1B[27m [27m [27ms[27mh[27m [27m-[27mc[27m [27m"[27md[27mu[27m [27m-[27ms[27mh[27m [27m/[27md[27ma[27mt[27ma[27m/[27mw[27mp[27m-[27mc[27mo[27mn[27mt[27me[27mn[27mt[27m/[27mu[27mp[27md[27mr[27ma[27mf[27mt[27m/[27m"[?2004l
+23.5M	/data/wp-content/updraft/
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mcat > ~/linux/week13/README.md <<'EOF'[27m
+[7m# 13주차 서버 백업 관리 실습[27m[K
+[K
+[7m## 1. 실습 주제[27m[K
+[K
+[7m13주차 실습 주제는 서버 백업 관리이다.  [27m[K
+[7m이번 실습에서는 서버 백업의 필요성과 3-2-1 백업 원칙을 이해하고, Restic을 활용한[7m [7mDocker 기반 WordPress 서버 백업 및 복구를 수행하였다.[27m[K
+[K
+[7m주요 실습 내용은 다음과 같다.[27m[K
+[K
+[7m- 서버 백업 트렌드 이해[27m[K
+[7m- Restic 설치 및 저장소 초기화[27m[K
+[7m- Docker 볼륨 백업[27m[K
+[7m- MySQL DB 덤프 백업[27m[K
+[7m- Restic 스냅샷 생성 및 무결성 검사[27m[K
+[7m- WordPress 게시글 삭제 장애 상황 생성[27m[K
+[7m- Restic 백업을 이용한 DB 복구[27m[K
+[7m- UpdraftPlus 플러그인을 이용한 WordPress 백업[27m[K
+[7m- GitHub 제출[27m[K
+[K
+[7m## 2. 실습 환경[27m[K
+[K
+[7m| 항목 | 내용 |[27m[K
+[7m|---|---|[27m[K
+[7m| OS | macOS Sequoia |[27m[K
+[7m| 장비 | MacBook Pro Apple Silicon |[27m[K
+[7m| Shell | zsh |[27m[K
+[7m| 컨테이너 환경 | Docker Desktop |[27m[K
+[7m| 저장소 위치 | ~/linux/week13 |[27m[K
+[7m| 백업 도구 | Restic |[27m[K
+[7m| WordPress 백업 플러그인 | UpdraftPlus |[27m[K
+[K
+[7m## 3. 기존 WordPress 서버 구성[27m[K
+[K
+[7m이전 실습에서 Docker Compose 기반 WordPress 3-Tier 서버를 구성하였다.[27m[K
+[K
+[7m실행 중인 컨테이너는 다음과 같다.[27m[K
+[K
+[7m| 컨테이너명 | 역할 |[27m[K
+[7m|---|---|[27m[K
+[7m| wp_nginx | Nginx 웹 서버 |[27m[K
+[7m| wp_app | WordPress PHP-FPM |[27m[K
+[7m| wp_db | MySQL 8.0 |[27m[K
+[7m| wp_portainer | Docker 관리 도구 |[27m[K
+[7m| wp_netdata | 서버 모니터링 도구 |[27m[K
+[K
+[7m## 4. 실습 전 상태 확인[27m[K
+[K
+[7m실습 시작 전 디스크 상태와 Docker 컨테이너 상태를 확인하였다.[27m[K
+[K
+[7m```bash[27m[K
+[7mdf -h[27m[K
+[7mdocker ps[27m[K[53A[23C[27mc[27ma[27mt[27m [27m>[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mR[27mE[27mA[27mD[27mM[27mE[27m.[27mm[27md[27m [27m<[27m<[27m'[27mE[27mO[27mF[27m'[1B[27m#[27m [27m1[27m3[27m주[27m[27m차[27m[27m [27m서[27m[27m버[27m[27m [27m백[27m[27m업[27m[27m [27m관[27m[27m리[27m[27m [27m실[27m[27m습[27m[2B[27m#[27m#[27m [27m1[27m.[27m [27m실[27m[27m습[27m[27m [27m주[27m[27m제[27m[2B[27m1[27m3[27m주[27m[27m차[27m[27m [27m실[27m[27m습[27m[27m [27m주[27m[27m제[27m[27m는[27m[27m [27m서[27m[27m버[27m[27m [27m백[27m[27m업[27m[27m [27m관[27m[27m리[27m[27m이[27m[27m다[27m[27m.[K[1B[27m이[27m[27m번[27m[27m [27m실[27m[27m습[27m[27m에[27m[27m서[27m[27m는[27m[27m [27m서[27m[27m버[27m[27m [27m백[27m[27m업[27m[27m의[27m[27m [27m필[27m[27m요[27m[27m성[27m[27m과[27m[27m [27m3[27m-[27m2[27m-[27m1[27m [27m백[27m[27m업[27m[27m [27m원[27m[27m칙[27m[27m을[27m[27m [27m이[27m[27m해[27m[27m하[27m[27m고[27m[27m,[27m [27mR[27me[27ms[27mt[27mi[27mc[27m을[27m[27m [27m활[27m[27m용[27m[27m한[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m기[27m[27m반[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m서[27m[27m버[27m[27m [27m백[27m[27m업[27m[27m [27m및[27m[27m [27m복[27m[27m구[27m[27m를[27m[27m [27m수[27m[27m행[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m주[27m[27m요[27m[27m [27m실[27m[27m습[27m[27m [27m내[27m[27m용[27m[27m은[27m[27m [27m다[27m[27m음[27m[27m과[27m[27m [27m같[27m[27m다[27m[27m.[2B[27m-[27m [27m서[27m[27m버[27m[27m [27m백[27m[27m업[27m[27m [27m트[27m[27m렌[27m[27m드[27m[27m [27m이[27m[27m해[27m[1B[27m-[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m설[27m[27m치[27m[27m [27m및[27m[27m [27m저[27m[27m장[27m[27m소[27m[27m [27m초[27m[27m기[27m[27m화[27m[1B[27m-[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m볼[27m[27m륨[27m[27m [27m백[27m[27m업[27m[1B[27m-[27m [27mM[27my[27mS[27mQ[27mL[27m [27mD[27mB[27m [27m덤[27m[27m프[27m[27m [27m백[27m[27m업[27m[1B[27m-[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m스[27m[27m냅[27m[27m샷[27m[27m [27m생[27m[27m성[27m[27m [27m및[27m[27m [27m무[27m[27m결[27m[27m성[27m[27m [27m검[27m[27m사[27m[1B[27m-[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m게[27m[27m시[27m[27m글[27m[27m [27m삭[27m[27m제[27m[27m [27m장[27m[27m애[27m[27m [27m상[27m[27m황[27m[27m [27m생[27m[27m성[27m[1B[27m-[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m백[27m[27m업[27m[27m을[27m[27m [27m이[27m[27m용[27m[27m한[27m[27m [27mD[27mB[27m [27m복[27m[27m구[27m[1B[27m-[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m플[27m[27m러[27m[27m그[27m[27m인[27m[27m을[27m[27m [27m이[27m[27m용[27m[27m한[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m백[27m[27m업[27m[1B[27m-[27m [27mG[27mi[27mt[27mH[27mu[27mb[27m [27m제[27m[27m출[27m[2B[27m#[27m#[27m [27m2[27m.[27m [27m실[27m[27m습[27m[27m [27m환[27m[27m경[27m[2B[27m|[27m [27m항[27m[27m목[27m[27m [27m|[27m [27m내[27m[27m용[27m[27m [27m|[1B[27m|[27m-[27m-[27m-[27m|[27m-[27m-[27m-[27m|[1B[27m|[27m [27mO[27mS[27m [27m|[27m [27mm[27ma[27mc[27mO[27mS[27m [27mS[27me[27mq[27mu[27mo[27mi[27ma[27m [27m|[1B[27m|[27m [27m장[27m[27m비[27m[27m [27m|[27m [27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m [27mP[27mr[27mo[27m [27mA[27mp[27mp[27ml[27me[27m [27mS[27mi[27ml[27mi[27mc[27mo[27mn[27m [27m|[1B[27m|[27m [27mS[27mh[27me[27ml[27ml[27m [27m|[27m [27mz[27ms[27mh[27m [27m|[1B[27m|[27m [27m컨[27m[27m테[27m[27m이[27m[27m너[27m[27m [27m환[27m[27m경[27m[27m [27m|[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27mD[27me[27ms[27mk[27mt[27mo[27mp[27m [27m|[1B[27m|[27m [27m저[27m[27m장[27m[27m소[27m[27m [27m위[27m[27m치[27m[27m [27m|[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m [27m|[1B[27m|[27m [27m백[27m[27m업[27m[27m [27m도[27m[27m구[27m[27m [27m|[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m|[1B[27m|[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m백[27m[27m업[27m[27m [27m플[27m[27m러[27m[27m그[27m[27m인[27m[27m [27m|[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m|[2B[27m#[27m#[27m [27m3[27m.[27m [27m기[27m[27m존[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m서[27m[27m버[27m[27m [27m구[27m[27m성[27m[2B[27m이[27m[27m전[27m[27m [27m실[27m[27m습[27m[27m에[27m[27m서[27m[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27mC[27mo[27mm[27mp[27mo[27ms[27me[27m [27m기[27m[27m반[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m3[27m-[27mT[27mi[27me[27mr[27m [27m서[27m[27m버[27m[27m를[27m[27m [27m구[27m[27m성[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m실[27m[27m행[27m[27m [27m중[27m[27m인[27m[27m [27m컨[27m[27m테[27m[27m이[27m[27m너[27m[27m는[27m[27m [27m다[27m[27m음[27m[27m과[27m[27m [27m같[27m[27m다[27m[27m.[2B[27m|[27m [27m컨[27m[27m테[27m[27m이[27m[27m너[27m[27m명[27m[27m [27m|[27m [27m역[27m[27m할[27m[27m [27m|[1B[27m|[27m-[27m-[27m-[27m|[27m-[27m-[27m-[27m|[1B[27m|[27m [27mw[27mp[27m_[27mn[27mg[27mi[27mn[27mx[27m [27m|[27m [27mN[27mg[27mi[27mn[27mx[27m [27m웹[27m[27m [27m서[27m[27m버[27m[27m [27m|[1B[27m|[27m [27mw[27mp[27m_[27ma[27mp[27mp[27m [27m|[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27mP[27mH[27mP[27m-[27mF[27mP[27mM[27m [27m|[1B[27m|[27m [27mw[27mp[27m_[27md[27mb[27m [27m|[27m [27mM[27my[27mS[27mQ[27mL[27m [27m8[27m.[27m0[27m [27m|[1B[27m|[27m [27mw[27mp[27m_[27mp[27mo[27mr[27mt[27ma[27mi[27mn[27me[27mr[27m [27m|[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m관[27m[27m리[27m[27m [27m도[27m[27m구[27m[27m [27m|[1B[27m|[27m [27mw[27mp[27m_[27mn[27me[27mt[27md[27ma[27mt[27ma[27m [27m|[27m [27m서[27m[27m버[27m[27m [27m모[27m[27m니[27m[27m터[27m[27m링[27m[27m [27m도[27m[27m구[27m[27m [27m|[2B[27m#[27m#[27m [27m4[27m.[27m [27m실[27m[27m습[27m[27m [27m전[27m[27m [27m상[27m[27m태[27m[27m [27m확[27m[27m인[27m[2B[27m실[27m[27m습[27m[27m [27m시[27m[27m작[27m[27m [27m전[27m[27m [27m디[27m[27m스[27m[27m크[27m[27m [27m상[27m[27m태[27m[27m와[27m[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m컨[27m[27m테[27m[27m이[27m[27m너[27m[27m [27m상[27m[27m태[27m[27m를[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m`[27m`[27m`[27mb[27ma[27ms[27mh[1B[27md[27mf[27m [27m-[27mh[1B[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+[0m[27m[24m[Jheredoc> [K[?2004h[7mEOF[27m[27mE[27mO[27mF[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mls -lh ~/linux/week13/README.md[27m
+[7mhead -20 ~/linux/week13/README.md[27m[K[A[27ml[27ms[27m [27m-[27ml[27mh[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mR[27mE[27mA[27mD[27mM[27mE[27m.[27mm[27md[1B[27mh[27me[27ma[27md[27m [27m-[27m2[27m0[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mR[27mE[27mA[27mD[27mM[27mE[27m.[27mm[27md[?2004l
+-rw-r--r--  1 mac  staff   1.4K  6  5 10:20 /Users/mac/linux/week13/README.md
+# 13주차 서버 백업 관리 실습
+
+## 1. 실습 주제
+
+13주차 실습 주제는 서버 백업 관리이다.  
+이번 실습에서는 서버 백업의 필요성과 3-2-1 백업 원칙을 이해하고, Restic을 활용한 Docker 기반 WordPress 서버 백업 및 복구를 수행하였다.
+
+주요 실습 내용은 다음과 같다.
+
+- 서버 백업 트렌드 이해
+- Restic 설치 및 저장소 초기화
+- Docker 볼륨 백업
+- MySQL DB 덤프 백업
+- Restic 스냅샷 생성 및 무결성 검사
+- WordPress 게시글 삭제 장애 상황 생성
+- Restic 백업을 이용한 DB 복구
+- UpdraftPlus 플러그인을 이용한 WordPress 백업
+- GitHub 제출
+
+## 2. 실습 환경
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h>....                                           
+[7m3. UpdraftPlus 검색[27m[K
+[7m4. 지금 설치[27m[K
+[7m5. 활성화[27m[K
+[7m6. UpdraftPlus 화면에서 지금 백업 실행[27m[K
+[K
+[7m백업 완료 후 기존 백업 목록에서 다음 항목들이 생성된 것을 확인하였다.[27m[K
+[K
+[7m- 데이터베이스[27m[K
+[7m- 플러그인[27m[K
+[7m- 테마[27m[K
+[7m- 업로드[27m[K
+[7m- 기타[27m[K
+[K
+[7m## 15. UpdraftPlus 백업 파일 위치 확인[27m[K
+[K
+[7mmacOS Docker Desktop 환경이므로 임시 Alpine 컨테이너를 이용하여 UpdraftPlus 백업[7m [7m파일 위치를 확인하였다.[27m[K
+[K
+[7m확인 경로는 다음과 같다.[27m[K
+[K
+[7m- /data/wp-content/updraft/[27m[K
+[K
+[7m확인된 주요 파일은 다음과 같다.[27m[K
+[K
+[7m- backup_2026-06-05-0114_20201000_WordPress_Lab_...-db.gz[27m[K
+[7m- backup_2026-06-05-0114_20201000_WordPress_Lab_...-others.zip[27m[K
+[7m- backup_2026-06-05-0114_20201000_WordPress_Lab_...-plugins.zip[27m[K
+[7m- backup_2026-06-05-0114_20201000_WordPress_Lab_...-themes.zip[27m[K
+[7m- backup_2026-06-05-0114_20201000_WordPress_Lab_...-uploads.zip[27m[K
+[K
+[7m전체 용량은 약 23.5M로 확인되었다.[27m[K
+[K
+[7m## 16. CLI 백업과 UpdraftPlus 백업 비교[27m[K
+[K
+[7m| 항목 | Restic + mysqldump | UpdraftPlus |[27m[K
+[7m|---|---|---|[27m[K
+[7m| 실행 방식 | 터미널 명령어 | WordPress 관리자 GUI |[27m[K
+[7m| 백업 위치 | 외부 Restic 저장소 | WordPress 내부 wp-content/updraft |[27m[K
+[7m| 암호화 | AES-256 암호화 지원 | 기본 압축 파일 |[27m[K
+[7m| 중복 제거 | 지원 | 미지원 |[27m[K
+[7m| 증분 백업 | Restic 스냅샷 기반 | 무료 버전은 제한적 |[27m[K
+[7m| 무결성 검사 | restic check 지원 | 별도 검사 제한 |[27m[K
+[7m| 복구 난이도 | 명령어 필요 | GUI 기반 복구 가능 |[27m[K
+[7m| 실무 대상 | 서버 관리자 | WordPress 관리자 |[27m[K
+[K
+[7m## 17. 실습 정리[27m[K
+[K
+[7m이번 실습에서는 Docker 기반 WordPress 서버의 파일과 DB를 각각 백업하고 복구하였 [27m[7m다[7m.  [27m[K
+[7mWordPress 파일은 Docker 볼륨을 tar.gz로 추출한 뒤 Restic으로 백업하였고, MySQL D[7mB[7m는 mysqldump를 사용하여 논리 백업을 수행하였다.[27m[K
+[K
+[7m또한 Restic의 스냅샷, 증분 백업, 무결성 검사, 복구 기능을 확인하였다.  [27m[K
+[7m게시글 삭제 장애 상황을 만든 뒤 DB 백업 스냅샷을 복구하여 게시글이 정상적으로 복[7m원[7m되는 것을 확인하였다.[27m[K
+[K
+[7m마지막으로 UpdraftPlus 플러그인을 이용하여 WordPress 관리자 화면에서도 백업을 생[7m성[7m하고, 실제 백업 파일이 wp-content/updraft 디렉토리에 저장되는 것을 확인하였다.[27m [K
+[7mEOF[27m[K[59A[27m3[27m.[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m검[27m[27m색[27m[1B[27m4[27m.[27m [27m지[27m[27m금[27m[27m [27m설[27m[27m치[27m[1B[27m5[27m.[27m [27m활[27m[27m성[27m[27m화[27m[1B[27m6[27m.[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m화[27m[27m면[27m[27m에[27m[27m서[27m[27m [27m지[27m[27m금[27m[27m [27m백[27m[27m업[27m[27m [27m실[27m[27m행[27m[2B[27m백[27m[27m업[27m[27m [27m완[27m[27m료[27m[27m [27m후[27m[27m [27m기[27m[27m존[27m[27m [27m백[27m[27m업[27m[27m [27m목[27m[27m록[27m[27m에[27m[27m서[27m[27m [27m다[27m[27m음[27m[27m [27m항[27m[27m목[27m[27m들[27m[27m이[27m[27m [27m생[27m[27m성[27m[27m된[27m[27m [27m것[27m[27m을[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m-[27m [27m데[27m[27m이[27m[27m터[27m[27m베[27m[27m이[27m[27m스[27m[1B[27m-[27m [27m플[27m[27m러[27m[27m그[27m[27m인[27m[1B[27m-[27m [27m테[27m[27m마[27m[1B[27m-[27m [27m업[27m[27m로[27m[27m드[27m[1B[27m-[27m [27m기[27m[27m타[27m[2B[27m#[27m#[27m [27m1[27m5[27m.[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m백[27m[27m업[27m[27m [27m파[27m[27m일[27m[27m [27m위[27m[27m치[27m[27m [27m확[27m[27m인[27m[2B[27mm[27ma[27mc[27mO[27mS[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27mD[27me[27ms[27mk[27mt[27mo[27mp[27m [27m환[27m[27m경[27m[27m이[27m[27m므[27m[27m로[27m[27m [27m임[27m[27m시[27m[27m [27mA[27ml[27mp[27mi[27mn[27me[27m [27m컨[27m[27m테[27m[27m이[27m[27m너[27m[27m를[27m[27m [27m이[27m[27m용[27m[27m하[27m[27m여[27m[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m백[27m[27m업[27m [27m파[27m[27m일[27m[27m [27m위[27m[27m치[27m[27m를[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m확[27m[27m인[27m[27m [27m경[27m[27m로[27m[27m는[27m[27m [27m다[27m[27m음[27m[27m과[27m[27m [27m같[27m[27m다[27m[27m.[2B[27m-[27m [27m/[27md[27ma[27mt[27ma[27m/[27mw[27mp[27m-[27mc[27mo[27mn[27mt[27me[27mn[27mt[27m/[27mu[27mp[27md[27mr[27ma[27mf[27mt[27m/[2B[27m확[27m[27m인[27m[27m된[27m[27m [27m주[27m[27m요[27m[27m [27m파[27m[27m일[27m[27m은[27m[27m [27m다[27m[27m음[27m[27m과[27m[27m [27m같[27m[27m다[27m[27m.[2B[27m-[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m-[27m0[27m1[27m1[27m4[27m_[27m2[27m0[27m2[27m0[27m1[27m0[27m0[27m0[27m_[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m_[27mL[27ma[27mb[27m_[27m.[27m.[27m.[27m-[27md[27mb[27m.[27mg[27mz[1B[27m-[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m-[27m0[27m1[27m1[27m4[27m_[27m2[27m0[27m2[27m0[27m1[27m0[27m0[27m0[27m_[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m_[27mL[27ma[27mb[27m_[27m.[27m.[27m.[27m-[27mo[27mt[27mh[27me[27mr[27ms[27m.[27mz[27mi[27mp[1B[27m-[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m-[27m0[27m1[27m1[27m4[27m_[27m2[27m0[27m2[27m0[27m1[27m0[27m0[27m0[27m_[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m_[27mL[27ma[27mb[27m_[27m.[27m.[27m.[27m-[27mp[27ml[27mu[27mg[27mi[27mn[27ms[27m.[27mz[27mi[27mp[1B[27m-[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m-[27m0[27m1[27m1[27m4[27m_[27m2[27m0[27m2[27m0[27m1[27m0[27m0[27m0[27m_[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m_[27mL[27ma[27mb[27m_[27m.[27m.[27m.[27m-[27mt[27mh[27me[27mm[27me[27ms[27m.[27mz[27mi[27mp[1B[27m-[27m [27mb[27ma[27mc[27mk[27mu[27mp[27m_[27m2[27m0[27m2[27m6[27m-[27m0[27m6[27m-[27m0[27m5[27m-[27m0[27m1[27m1[27m4[27m_[27m2[27m0[27m2[27m0[27m1[27m0[27m0[27m0[27m_[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m_[27mL[27ma[27mb[27m_[27m.[27m.[27m.[27m-[27mu[27mp[27ml[27mo[27ma[27md[27ms[27m.[27mz[27mi[27mp[2B[27m전[27m[27m체[27m[27m [27m용[27m[27m량[27m[27m은[27m[27m [27m약[27m[27m [27m2[27m3[27m.[27m5[27mM[27m로[27m[27m [27m확[27m[27m인[27m[27m되[27m[27m었[27m[27m다[27m[27m.[2B[27m#[27m#[27m [27m1[27m6[27m.[27m [27mC[27mL[27mI[27m [27m백[27m[27m업[27m[27m과[27m[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m백[27m[27m업[27m[27m [27m비[27m[27m교[27m[2B[27m|[27m [27m항[27m[27m목[27m[27m [27m|[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m+[27m [27mm[27my[27ms[27mq[27ml[27md[27mu[27mm[27mp[27m [27m|[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m|[1B[27m|[27m-[27m-[27m-[27m|[27m-[27m-[27m-[27m|[27m-[27m-[27m-[27m|[1B[27m|[27m [27m실[27m[27m행[27m[27m [27m방[27m[27m식[27m[27m [27m|[27m [27m터[27m[27m미[27m[27m널[27m[27m [27m명[27m[27m령[27m[27m어[27m[27m [27m|[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m관[27m[27m리[27m[27m자[27m[27m [27mG[27mU[27mI[27m [27m|[1B[27m|[27m [27m백[27m[27m업[27m[27m [27m위[27m[27m치[27m[27m [27m|[27m [27m외[27m[27m부[27m[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m저[27m[27m장[27m[27m소[27m[27m [27m|[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m내[27m[27m부[27m[27m [27mw[27mp[27m-[27mc[27mo[27mn[27mt[27me[27mn[27mt[27m/[27mu[27mp[27md[27mr[27ma[27mf[27mt[27m [27m|[1B[27m|[27m [27m암[27m[27m호[27m[27m화[27m[27m [27m|[27m [27mA[27mE[27mS[27m-[27m2[27m5[27m6[27m [27m암[27m[27m호[27m[27m화[27m[27m [27m지[27m[27m원[27m[27m [27m|[27m [27m기[27m[27m본[27m[27m [27m압[27m[27m축[27m[27m [27m파[27m[27m일[27m[27m [27m|[1B[27m|[27m [27m중[27m[27m복[27m[27m [27m제[27m[27m거[27m[27m [27m|[27m [27m지[27m[27m원[27m[27m [27m|[27m [27m미[27m[27m지[27m[27m원[27m[27m [27m|[1B[27m|[27m [27m증[27m[27m분[27m[27m [27m백[27m[27m업[27m[27m [27m|[27m [27mR[27me[27ms[27mt[27mi[27mc[27m [27m스[27m[27m냅[27m[27m샷[27m[27m [27m기[27m[27m반[27m[27m [27m|[27m [27m무[27m[27m료[27m[27m [27m버[27m[27m전[27m[27m은[27m[27m [27m제[27m[27m한[27m[27m적[27m[27m [27m|[1B[27m|[27m [27m무[27m[27m결[27m[27m성[27m[27m [27m검[27m[27m사[27m[27m [27m|[27m [27mr[27me[27ms[27mt[27mi[27mc[27m [27mc[27mh[27me[27mc[27mk[27m [27m지[27m[27m원[27m[27m [27m|[27m [27m별[27m[27m도[27m[27m [27m검[27m[27m사[27m[27m [27m제[27m[27m한[27m[27m [27m|[1B[27m|[27m [27m복[27m[27m구[27m[27m [27m난[27m[27m이[27m[27m도[27m[27m [27m|[27m [27m명[27m[27m령[27m[27m어[27m[27m [27m필[27m[27m요[27m[27m [27m|[27m [27mG[27mU[27mI[27m [27m기[27m[27m반[27m[27m [27m복[27m[27m구[27m[27m [27m가[27m[27m능[27m[27m [27m|[1B[27m|[27m [27m실[27m[27m무[27m[27m [27m대[27m[27m상[27m[27m [27m|[27m [27m서[27m[27m버[27m[27m [27m관[27m[27m리[27m[27m자[27m[27m [27m|[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m관[27m[27m리[27m[27m자[27m[27m [27m|[2B[27m#[27m#[27m [27m1[27m7[27m.[27m [27m실[27m[27m습[27m[27m [27m정[27m[27m리[27m[2B[27m이[27m[27m번[27m[27m [27m실[27m[27m습[27m[27m에[27m[27m서[27m[27m는[27m[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m기[27m[27m반[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m서[27m[27m버[27m[27m의[27m[27m [27m파[27m[27m일[27m[27m과[27m[27m [27mD[27mB[27m를[27m[27m [27m각[27m[27m각[27m[27m [27m백[27m[27m업[27m[27m하[27m[27m고[27m[27m [27m복[27m[27m구[27m[27m하[27m[27m였[27m[1B[27m다[27m[27m.[K[1B[27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m파[27m[27m일[27m[27m은[27m[27m [27mD[27mo[27mc[27mk[27me[27mr[27m [27m볼[27m[27m륨[27m[27m을[27m[27m [27mt[27ma[27mr[27m.[27mg[27mz[27m로[27m[27m [27m추[27m[27m출[27m[27m한[27m[27m [27m뒤[27m[27m [27mR[27me[27ms[27mt[27mi[27mc[27m으[27m[27m로[27m[27m [27m백[27m[27m업[27m[27m하[27m[27m였[27m[27m고[27m[27m,[27m [27mM[27my[27mS[27mQ[27mL[27m [27mDB[27m는[27m[27m [27mm[27my[27ms[27mq[27ml[27md[27mu[27mm[27mp[27m를[27m[27m [27m사[27m[27m용[27m[27m하[27m[27m여[27m[27m [27m논[27m[27m리[27m[27m [27m백[27m[27m업[27m[27m을[27m[27m [27m수[27m[27m행[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m또[27m[27m한[27m[27m [27mR[27me[27ms[27mt[27mi[27mc[27m의[27m[27m [27m스[27m[27m냅[27m[27m샷[27m[27m,[27m [27m증[27m[27m분[27m[27m [27m백[27m[27m업[27m[27m,[27m [27m무[27m[27m결[27m[27m성[27m[27m [27m검[27m[27m사[27m[27m,[27m [27m복[27m[27m구[27m[27m [27m기[27m[27m능[27m[27m을[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m.[K[1B[27m게[27m[27m시[27m[27m글[27m[27m [27m삭[27m[27m제[27m[27m [27m장[27m[27m애[27m[27m [27m상[27m[27m황[27m[27m을[27m[27m [27m만[27m[27m든[27m[27m [27m뒤[27m[27m [27mD[27mB[27m [27m백[27m[27m업[27m[27m [27m스[27m[27m냅[27m[27m샷[27m[27m을[27m[27m [27m복[27m[27m구[27m[27m하[27m[27m여[27m[27m [27m게[27m[27m시[27m[27m글[27m[27m이[27m[27m [27m정[27m[27m상[27m[27m적[27m[27m으[27m[27m로[27m[27m [27m복[27m원[27m되[27m[27m는[27m[27m [27m것[27m[27m을[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m.[2B[27m마[27m[27m지[27m[27m막[27m[27m으[27m[27m로[27m[27m [27mU[27mp[27md[27mr[27ma[27mf[27mt[27mP[27ml[27mu[27ms[27m [27m플[27m[27m러[27m[27m그[27m[27m인[27m[27m을[27m[27m [27m이[27m[27m용[27m[27m하[27m[27m여[27m[27m [27mW[27mo[27mr[27md[27mP[27mr[27me[27ms[27ms[27m [27m관[27m[27m리[27m[27m자[27m[27m [27m화[27m[27m면[27m[27m에[27m[27m서[27m[27m도[27m[27m [27m백[27m[27m업[27m[27m을[27m[27m [27m생[27m성[27m하[27m[27m고[27m[27m,[27m [27m실[27m[27m제[27m[27m [27m백[27m[27m업[27m[27m [27m파[27m[27m일[27m[27m이[27m[27m [27mw[27mp[27m-[27mc[27mo[27mn[27mt[27me[27mn[27mt[27m/[27mu[27mp[27md[27mr[27ma[27mf[27mt[27m [27m디[27m[27m렉[27m[27m토[27m[27m리[27m[27m에[27m[27m [27m저[27m[27m장[27m[27m되[27m[27m는[27m[27m [27m것[27m[27m을[27m[27m [27m확[27m[27m인[27m[27m하[27m[27m였[27m[27m다[27m[27m. [1B[27mE[27mO[27mF[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mls -lh ~/linux/week13/README.md[27m
+[7mhead -20 ~/linux/week13/README.md[27m[K[A[27ml[27ms[27m [27m-[27ml[27mh[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mR[27mE[27mA[27mD[27mM[27mE[27m.[27mm[27md[1B[27mh[27me[27ma[27md[27m [27m-[27m2[27m0[27m [27m~[27m/[27ml[27mi[27mn[27mu[27mx[27m/[27mw[27me[27me[27mk[27m1[27m3[27m/[27mR[27mE[27mA[27mD[27mM[27mE[27m.[27mm[27md[?2004l
+-rw-r--r--  1 mac  staff   8.2K  6  5 10:21 /Users/mac/linux/week13/README.md
+# 13주차 서버 백업 관리 실습
+
+## 1. 실습 주제
+
+이번 실습은 서버 백업 관리이다.  
+Docker 기반 WordPress 서버를 대상으로 파일 백업, DB 백업, Restic 스냅샷 생성, 장애 상황 생성, 복구 실습을 진행하였다.  
+추가로 WordPress 관리자 화면에서 UpdraftPlus 플러그인을 이용한 백업도 수행하였다.
+
+## 2. 실습 환경
+
+| 항목 | 내용 |
+|---|---|
+| OS | macOS Sequoia |
+| 장비 | MacBook Pro Apple Silicon |
+| Shell | zsh |
+| 컨테이너 환경 | Docker Desktop |
+| 실습 경로 | ~/linux/week13 |
+| 백업 도구 | Restic |
+| WordPress 백업 플러그인 | UpdraftPlus |
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://macui-MacBookPro-2.local/Users/mac/linux/week13[0m[27m[24m[Jmac@macui-MacBookPro-2 week13 % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...       4 completed.
+
+Script done on Fri Jun  5 10:22:39 2026
